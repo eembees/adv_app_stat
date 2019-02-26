@@ -1,0 +1,16 @@
+Conference   AdjO diff-Md 
+ACC                 -0.05 
+SEC                  1.65 
+B10                  4.30 
+BSky                 3.20 
+A10                  2.90 
+BE                   0.95 
+Outsiders            1.50
+Conference   AdjO diff-Mn 
+ACC                 -0.63 
+SEC                  2.28 
+B10                  2.67 
+BSky                 2.32 
+A10                  3.51 
+BE                   0.96 
+Outsiders            2.49
