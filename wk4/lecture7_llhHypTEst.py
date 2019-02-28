@@ -32,10 +32,8 @@ def make_target(data):
     return lambda alfa, beta: -2 * llh(data, make_pdf(alfa, beta))
 
 
-
 def theoretical_function_new(x, alfa, beta, gamma):
     return (1 + alfa * x + beta * (x ** 2) - gamma * (x**5))
-
 
 
 def theoretical_pdf_new(x, alfa, beta, gamma):
@@ -133,7 +131,7 @@ if __name__ == '__main__':
 
         # Fit function
 
-        x_plot = np.linspace(start = -1, stop = 1, num = 1000)
+        x_plot = np.linspace(start = -1.2, stop = 1.2, num = 1000)
 
         y_func = theoretical_pdf(x_plot, alfa, beta)
         y_func_new = theoretical_pdf_new(x_plot, alfa_new, beta_new, gamma_new)
