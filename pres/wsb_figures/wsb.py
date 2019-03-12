@@ -63,17 +63,21 @@ class BinSeg:
         self.bs = []
         self.wbs = []
 
+    def resetFMT(self):
+        self.FMT   = makeFMT(M=self.M, T=self.N_t)
+
+
     def updateBS(self, s=0, e=None):
         if e == None:
             e = len(self.trace) - 1
         if e - s >= 1:
-            print('Now trying s={} and e={}'.format(s, e))
+            # print('Now trying s={} and e={}'.format(s, e))
             arr = self.trace[s:e]
             b_CUSUM = getBSCUSUM(arr, s, e)
 
             b_0 = np.argmax(b_CUSUM)
             if b_CUSUM[b_0] > self.thres:
-                print('Found event at {}'.format(b_0))
+                # print('Found event at {}'.format(b_0))
                 self.bs.append(b_0 + s)  # Add s to make sure we have the right index
                 self.updateBS(s=s, e=b_0)
                 self.updateBS(s=b_0+1, e=e)
@@ -221,7 +225,7 @@ class BinSeg:
 if __name__ == '__main__':
     import matplotlib.pyplot as plt
 
-    sigma = 10
+    sigma = 20
     # Generate data
     arr_pt_1 = np.random.normal(loc = 100, scale = sigma, size=23)
     arr_pt_2 = np.random.normal(loc = 170, scale = sigma, size=50)
@@ -238,16 +242,16 @@ if __name__ == '__main__':
 
     trace = np.concatenate(arrs)
 
-    C = 1
-
-    fig, ax = plt.subplots()
-
-    ax.plot(trace)
-
-
+    # C = 1
     #
-    myBS = BinSeg(trace=trace, C=C, M=5000)
+    # fig, ax = plt.subplots()
     #
+    # ax.plot(trace)
+    #
+    #
+    # #
+    # myBS = BinSeg(trace=trace, C=C, M=3000)
+    # #
 
     # myBS.updateBS()
     #
@@ -259,21 +263,70 @@ if __name__ == '__main__':
     #     ax.axvline(x = xline, ls='--', color='xkcd:dark red')
 
     #
-    for C_i in [50, 70]:#,100,500,1000,5000]:
-        print('This is with C = {}'.format(C_i))
-        myBS.updateThreshold(C=C_i)
-        myBS.printParams()
-        myBS.resetAllBS()
+
+    #
+    # for C_i in [51.2,51.6]:#,51.8]:#,100,500,1000,5000]:
+    #     # counter += 1
+    #     print('This is with C = {}'.format(C_i))
+    #     myBS.updateThreshold(C=C_i)
+    #     myBS.printParams()
+    #     myBS.resetAllBS()
+    #     myBS.updateWBS()
+    #     print(len(myBS.wbs))
+    #
+    #
+
+    C = 55
+    n_iter = 100
+
+
+    myBS = BinSeg(trace=trace, C=C, M=3000)
+
+    myBS.updateWBS()
+
+    wellfitx = myBS.wbs.copy()
+    realx = [73,23,123]
+
+    myBS.updateThreshold(C = 51.00)
+
+    myBS.updateBS()
+
+
+
+    for i in range(n_iter):
+        print('Iter {}'.format(i))
         myBS.updateWBS()
-        print(len(myBS.wbs))
+        myBS.resetFMT()
+
+    print(myBS.wbs)
+    print(wellfitx)
+    # exit()
 
 
+    # plotting
+
+    fig, axes = plt.subplots(nrows=3, figsize=(6,10))
+    ax = axes.ravel()
+    ax[0].plot(trace)
+    ax[1].plot(trace)
+
+    for xline in myBS.bs:
+        ax[0].axvline(x = xline, ls='--', color='xkcd:dark red')
+    for xline in wellfitx:
+        ax[1].axvline(x = xline, ls='--',lw=0.3, color='xkcd:hot pink')
+    for xline in realx:
+        ax[2].axvline(x = xline, color='xkcd:easter green')
 
 
-    for xline in myBS.wbs:
-        ax.axvline(x = xline, ls='--', color='xkcd:dark red')
+    ax[2].hist(myBS.wbs, bins=100, range=(0,200), density=None,)
 
+    # for xline in myBS.wbs:
+    #     ax[0].axvline(x = xline, ls='--', color='xkcd:dark red')
 
+    ax[0].set_title('Trace and Binary Segmentation')
+    ax[1].set_title('Trace and Wild Binary Segmentation, N = {}'.format(n_iter))
+    ax[2].set_title('Wild Binary Segmentation histogram and real changepoints')
 
-    plt.show()
-
+    plt.tight_layout()
+    # plt.show()
+    plt.savefig('simulation.png', dpi=300)
