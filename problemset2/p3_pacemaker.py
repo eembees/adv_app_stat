@@ -84,8 +84,6 @@ print('If defective, a PM is {:.2%} likely to come from the facility {}'.format(
 df = find_new_defective_rates(df)
 print(df[['facility', 'defective', 'new_defective']])
 
-
-
 data2 = StringIO('''
 facility     production        defective
 A1           0.27              0.02

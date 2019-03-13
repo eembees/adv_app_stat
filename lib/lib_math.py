@@ -31,3 +31,42 @@ def bin_data(x, N_bins=100, range_x = None):
     hist_mask = hist_y > 0
     return hist_x, hist_y, hist_sy, hist_mask
 
+
+
+def make_KDE(x:np.ndarray, h: float = 1.5, type: str = 'gauss'):
+    """
+    :param x : data to construct KDE from
+    :type x : np.ndarray
+    :param h : height
+    :type h : float
+
+    :rtype: object
+    """
+    # THE KERNEL IS ALWAYS NORMALIZED
+
+    global K
+
+    if type == 'flat':
+        def K(x_0, x_1, h=h):
+            w = 2 * h
+            k = 1 / w
+            diff = np.abs(x_0 - x_1)
+            return k if diff <= w / 2 else 0
+    elif type == 'gauss':
+        def K(x_0, x_1, h=h):
+            k = (1/(np.sqrt(2*np.pi)*h))*np.exp(-(np.abs(x_1-x_0)**2) / (2 * h**2) )
+            return k
+    elif type == 'epan':
+        def K(x_0, x_1, h=h):
+            diff = np.abs(x_0 - x_1)
+            k = 3/4 * (h - (diff**2))
+            return k if k > 0 else 0
+
+    n_x = np.sum(x.shape)
+
+    def pdf_KDE(xi):
+        return 1 / n_x * np.sum(
+            [K(x_0=xj, x_1=xi) for xj in x]
+        )
+
+    return pdf_KDE
