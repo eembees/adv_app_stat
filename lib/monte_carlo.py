@@ -8,7 +8,7 @@
 import numpy as np
 
 
-def monte_carlo(pdffunc, num=1000, range_x=(0.01, 1)):
+def monte_carlo(pdffunc, num=1000, range_x:tuple=(0.01, 1)):
     """Short summary.
 
     Parameters
@@ -31,7 +31,10 @@ def monte_carlo(pdffunc, num=1000, range_x=(0.01, 1)):
     i = 0
 
     x_test_arr = np.linspace(*range_x, num=100)
-    y_test_arr = pdffunc(x_test_arr)
+    try:
+        y_test_arr = pdffunc(x_test_arr)
+    except ValueError: #slower but functional method for homemade kde
+        y_test_arr = np.array([pdffunc(x) for x in x_test_arr ])
 
     range_y = (0, y_test_arr.max())
 

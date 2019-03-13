@@ -29,7 +29,10 @@ def nice_string_output(names, values, extra_spacing = 0,):
 ##################################
 ##################################
 
-def plot_gaussian(data, ax, nBins=100, textpos='l', legend=False):
+def plot_gaussian(data, ax:plt.Axes, nBins=100, textpos='l', legend=False, short_text=False):
+    # make sure our data is an ndarray
+    if type(data) == list:
+        data = np.array(data)
     ### FITTING WITH A GAUSSIAN
 
     def func_gauss(x, N, mu, sigma):
@@ -57,22 +60,26 @@ def plot_gaussian(data, ax, nBins=100, textpos='l', legend=False):
     NDOF_gauss  = nBins - 3
     prob_gauss  = stats.chi2.sf(chi2_gauss, NDOF_gauss)
 
+    if short_text == True:
+        namesl  = ['Gauss_N','Gauss_Mu','Gauss_Sigma',]
+        valuesl = ['{:.3f} +/- {:.3f}'.format(val, unc) for val, unc in zip(popt_gauss,np.diagonal(pcov_gauss))]
+        del namesl[0] # remove gauss n
+        del valuesl[0]
+    else:
+        namesl  = ['Gauss_N','Gauss_Mu','Gauss_Sigma',
+                    'KS stat', 'KS_pval',
+                    'Chi2 / NDOF','Prob']
+        valuesl = ['{:.3f} +/- {:.3f}'.format(val, unc) for val, unc in zip(popt_gauss,np.diagonal(pcov_gauss))] + \
+                    ['{:.3f}'.format(pKS_g1)] + ['{:.3f}'.format(pKS_g2)] + \
+                    ['{:.3f} / {}'.format(chi2_gauss, NDOF_gauss)] + ['{:.3f}'.format(prob_gauss)]
 
-    namesl  = ['Gauss_N','Gauss_Mu','Gauss_Sigma',
-                'KS stat', 'KS_pval',
-                'Chi2 / NDOF','Prob']
-    valuesl = ['{:.3f} +/- {:.3f}'.format(val, unc) for val, unc in zip(popt_gauss,np.diagonal(pcov_gauss))] + \
-                ['{:.3f}'.format(pKS_g1)] + ['{:.3f}'.format(pKS_g2)] + \
-                ['{:.3f} / {}'.format(chi2_gauss, NDOF_gauss)] + ['{:.3f}'.format(prob_gauss)]
-
-    # ax.set_xlim(left=-0.3, right=0.3)
     ax.errorbar(x, y, yerr=sy, xerr=0, fmt='.', elinewidth=1)
     ax.plot(x, y_func, '--', label='Gaussian')
     if textpos == 'l':
         ax.text(0.02,0.98, nice_string_output(namesl, valuesl),
                     family='monospace',  transform=ax.transAxes,
                     fontsize=10, verticalalignment='top', alpha=0.5)
-    else:
+    elif textpos == 'r':
         ax.text(0.6,0.98, nice_string_output(namesl, valuesl),
                     family='monospace',  transform=ax.transAxes,
                     fontsize=10, verticalalignment='top', alpha=0.5)
