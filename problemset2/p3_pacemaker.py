@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from io import StringIO
 
+
 def find_relative_defective(df: pd.DataFrame):
     df = df.copy(deep=True)
     df['perc_def'] = df.production * df.defective
@@ -24,23 +25,20 @@ def find_new_defective_rates(df):
     # determine which row to normalize by
     rates_candidates = []
 
-    # test a series of ks
-
     defective_rates_new_nonorm = 1 / (df.production.values)
-
 
     for row_i in df.index:
         row = df.loc[row_i]
         # Calculate all the new defective rates
         defective_rates_row_norm = defective_rates_new_nonorm * (row.defective / defective_rates_new_nonorm[row_i])
+
         # Only if all rates are higher or equal, accept the candidate
         if all(defective_rates_row_norm >= df.defective.values):
             rates_candidates.append(defective_rates_row_norm)
 
-
-    if len(rates_candidates) == 1: # only one candidate is accepted
+    if len(rates_candidates) == 1:  # only one candidate is accepted
         df['new_defective'] = rates_candidates[0]
-    else: # find the minimization
+    else:  # find the minimization
         overall_defective_rates = [
             np.sum(rates_candidate * df.production.values) for rates_candidate in rates_candidates
         ]
@@ -51,11 +49,12 @@ def find_new_defective_rates(df):
 
     return df
 
+
 df = pd.DataFrame(
     {
-        'facility': ['A1','A2','A3','A4','A5'],
-        'production': np.array([35,15,5,20,25])/100,
-        'defective': np.array([2,4,10,3.5,3.1])/100,
+        'facility': ['A1', 'A2', 'A3', 'A4', 'A5'],
+        'production': np.array([35, 15, 5, 20, 25]) / 100,
+        'defective': np.array([2, 4, 10, 3.5, 3.1]) / 100,
     }
 )
 
@@ -102,8 +101,7 @@ A13          0.015             0.099
 A14          0.008             0.082
 ''')
 
-df2 = pd.read_csv(data2, delim_whitespace=True, usecols=['facility','production','defective'])
-
+df2 = pd.read_csv(data2, delim_whitespace=True, usecols=['facility', 'production', 'defective'])
 
 # print(df2)
 

@@ -70,8 +70,8 @@ def make_KDE(x:np.ndarray, h: float = 1.5, type: str = 'gauss'):
     n_x = len(x)
 
     def pdf_KDE(xi):
-        return (1 /(n_x)) * np.sum(
-            [K(x_0=xj, x_1=xi)/h for xj in x]
+        return (1 /(h * n_x)) * np.sum(
+            [K(x_0=xj, x_1=xi) for xj in x]
         )
 
     return pdf_KDE

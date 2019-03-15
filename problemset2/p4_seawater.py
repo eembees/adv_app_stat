@@ -8,6 +8,10 @@ import matplotlib.pyplot as plt
 from sklearn.neighbors.kde import KernelDensity
 from pathlib import Path
 
+
+# plt.xkcd()
+
+
 # custom functions from lib modified
 def llh(data, pdf):
     try:
@@ -15,7 +19,6 @@ def llh(data, pdf):
     except ValueError:
         loglh = (np.sum([np.log(pdf(dat)) for dat in data]))
     return loglh
-
 
 
 # import data
@@ -33,7 +36,7 @@ arr17 = arr17[arr17 != -99.99]
 x_arr = np.linspace(start=-2, stop=4, num=100)
 
 # initialize figure
-figs, axs = plt.subplots(figsize=(10,6))
+figs, axs = plt.subplots(figsize=(10, 6))
 
 # # Make a epan. kernel bw 0.4
 
@@ -104,45 +107,47 @@ axs.plot(x_arr, y_17_sk, linestyle='dotted', color='xkcd:lavender', label=label1
 num_mc = 100
 mc_ratios = []
 for i in range(num_mc):
-    mc_samples = monte_carlo(p_KDE_97,range_x=(-1,2))
-
+    mc_samples = monte_carlo(p_KDE_97, range_x=(-1, 2))
 
     # mc_samples = monte_carlo(integration_function_97,range_x=(-1,2))
 
     llh_97 = llh(mc_samples, pdf=p_KDE_97)
     llh_17 = llh(mc_samples, pdf=p_KDE_17)
 
-    # lh_rat = np.exp((llh_97 - llh_17))
+    # lh_97 = np.exp(llh_97)
+    # lh_17 = np.exp(llh_17)
+
     lh_rat = llh_97 - llh_17
-    # print(lh_rat)
+
+    # loglh_diff = llh_97 - llh_17
+    # lamd = -2 * loglh_diff
+    # # print(lh_rat)
     mc_ratios.append(lh_rat)
     # TODO check on LLH ratios
 
 f_out_name = Path.cwd() / 'sletfjerding_KDE_1000_samples.txt'
 
-
 np.savetxt(fname=f_out_name, X=mc_samples)
-label_hist =  '1000 MC samples'
-
+label_hist = '1000 MC samples'
 
 # # Make a histogram
-hist_x, hist_y, hist_sy, hist_mask = lm.bin_data(mc_samples, range_x=(-1,2), N_bins=50)
+hist_x, hist_y, hist_sy, hist_mask = lm.bin_data(mc_samples, range_x=(-1, 2), N_bins=50)
 
-axs.errorbar(hist_x[hist_mask], hist_y[hist_mask], yerr=hist_sy[hist_mask], label =label_hist,
-             fmt = '+', ecolor='xkcd:lavender',elinewidth=0.5)
+axs.errorbar(hist_x[hist_mask], hist_y[hist_mask], yerr=hist_sy[hist_mask], label=label_hist,
+             fmt='+', ecolor='xkcd:lavender', elinewidth=0.5)
 
 # include distribution of mc results
-ins = axs.inset_axes([-2,0.5,2,0.5],transform=axs .transData)
+ins = axs.inset_axes([-2, 0.4, 2, 0.5], transform=axs.transData)
 
 ins = plot_gaussian(data=np.array(mc_ratios), ax=ins, nBins=15, short_text=True)
-ins.set_title('Distribution of LLH differences')
+ins.set_title('Distribution of {} $\lambda$s'.format(len(mc_ratios)))
 
 axs.set_title('Sea Surface Water Temperatures')
 axs.set_xlabel('Temperature')
 axs.set_ylabel('$P_{KDE}$')
+axs.set_ylim(0, 1)
 
 legend = axs.legend(loc='upper right')
 
 figs.tight_layout()
-
 figs.savefig('p4_seawater.pdf')

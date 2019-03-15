@@ -4,7 +4,7 @@ from pathlib import Path
 from shapely.geometry.polygon import Polygon
 from shapely.geometry import Point
 
-
+plt.xkcd()
 
 dir = Path.cwd()
 fname_data = list(dir.glob('*Problem2.txt'))[0]
@@ -59,6 +59,6 @@ ax.set_title('Area of arbitrary polygon\n area = {}/{} = {}'.format(counter, num
 ax.legend()
 
 # plt.show()
-fig.savefig('p2_bat.pdf')
+fig.savefig('p2_xkcd.pdf')
 
 

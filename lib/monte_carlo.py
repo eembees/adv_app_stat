@@ -8,7 +8,7 @@
 import numpy as np
 
 
-def monte_carlo(pdffunc, num=1000, range_x:tuple=(0.01, 1)):
+def monte_carlo(pdffunc, num=1000, range_x: tuple = (0.01, 1)):
     """Short summary.
 
     Parameters
@@ -33,8 +33,8 @@ def monte_carlo(pdffunc, num=1000, range_x:tuple=(0.01, 1)):
     x_test_arr = np.linspace(*range_x, num=100)
     try:
         y_test_arr = pdffunc(x_test_arr)
-    except ValueError: #slower but functional method for homemade kde
-        y_test_arr = np.array([pdffunc(x) for x in x_test_arr ])
+    except ValueError:  # slower but functional method for homemade kde
+        y_test_arr = np.array([pdffunc(x) for x in x_test_arr])
 
     range_y = (0, y_test_arr.max())
 
@@ -55,8 +55,11 @@ def monte_carlo(pdffunc, num=1000, range_x:tuple=(0.01, 1)):
 if __name__ == '__main__':
     from plot_gaussian import plot_gaussian
     import matplotlib.pyplot as plt
+
+
     def funk(x):
-        return (1 + 2*x + 4*x**2)
+        return (1 + 2 * x + 4 * x ** 2)
+
 
     data = monte_carlo(funk)
 
