@@ -9,7 +9,7 @@ import lib.lib_math as lm
 # import data
 fname_data = list(Path.cwd().glob('*llhratios.txt'))[0]
 
-data = np.abs(np.loadtxt(fname_data))
+data = np.loadtxt(fname_data) # why abs
 
 # TODO use log scale
 

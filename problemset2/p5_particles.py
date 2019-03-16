@@ -52,7 +52,7 @@ def make_pdf(b, sigma):
     return pdf
 
 
-def make_target(data):
+def make_target(data): # TODO : chsnge this and rerun
     return lambda b, sigma: -2 * lm.llh(data, make_pdf(b, sigma))
 
 
@@ -105,7 +105,7 @@ for data_chunk in data_chunks_gen:
         # print(minuit_LH1.args[1])
 
     if (llh_H0 is not None) and (llh_H1 is not None):
-        lambda_x = -2 * (llh_H0 - llh_H1)
+        lambda_x = (llh_H0 - llh_H1)
 
         lambdas_converged.append(lambda_x)
 
