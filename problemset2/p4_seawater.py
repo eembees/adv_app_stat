@@ -36,7 +36,7 @@ arr17 = arr17[arr17 != -99.99]
 x_arr = np.linspace(start=-2, stop=4, num=100)
 
 # initialize figure
-figs, axs = plt.subplots(figsize=(10, 6))
+figs, axs = plt.subplots(figsize=(7.5, 4))
 
 # # Make a epan. kernel bw 0.4
 

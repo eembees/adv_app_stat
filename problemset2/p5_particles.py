@@ -52,7 +52,7 @@ def make_pdf(b, sigma):
     return pdf
 
 
-def make_target(data): # TODO : chsnge this and rerun
+def make_target(data):
     return lambda b, sigma: -2 * lm.llh(data, make_pdf(b, sigma))
 
 
@@ -97,6 +97,7 @@ for data_chunk in data_chunks_gen:
     else:
         llh_H0 = minuit_LH0.fval
         # print(minuit_LH0.args[1])
+
     if (not minuit_LH1.get_fmin().is_valid):  # Check if the fit converged
         print("WARNING: The (unbinned) likelihood fit DID NOT converge! (H1)")
         llh_H1 = None
@@ -114,12 +115,12 @@ print(lambdas_converged)
 # now we can work on this separately. that will make my poor computer very happy
 np.savetxt('p5_llhratios.txt', lambdas_converged)
 
-# hist_tuple = lm.bin_data(lh_ratios, bins=20)
-
-fig, ax = plt.subplots()
-
-# ax.errorbar(hist_tuple[0], hist_tuple[1])
-
-ax = plot_gaussian(lambdas_converged, ax=ax, nBins=25)
-
-plt.savefig('p5_llh.pdf')
+# # hist_tuple = lm.bin_data(lh_ratios, bins=20)
+#
+# fig, ax = plt.subplots()
+#
+# # ax.errorbar(hist_tuple[0], hist_tuple[1])
+#
+# ax = plot_gaussian(lambdas_converged, ax=ax, nBins=25)
+#
+# plt.savefig('p5_llh.pdf')

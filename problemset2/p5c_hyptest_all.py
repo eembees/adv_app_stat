@@ -75,11 +75,11 @@ f_data = list(Path.cwd().glob('*NucData.txt'))[0]
 data = np.loadtxt(f_data)
 
 # null hypothesis
-minuit_LH0 = Minuit(make_target(data), print_level=2, b=init_b, sigma=init_sigma, fix_b=True, pedantic=True)
+minuit_LH0 = Minuit(make_target(data), print_level=2, b=init_b, sigma=init_sigma, fix_b=True, pedantic=True,)
 minuit_LH0.migrad()
 
 # not null hypothesis
-minuit_LH1 = Minuit(make_target(data), print_level=2, b=init_b, sigma=init_sigma, pedantic=True)
+minuit_LH1 = Minuit(make_target(data), print_level=2, b=init_b, sigma=init_sigma, pedantic=True,)
 minuit_LH1.migrad()
 
 llh_H0 = minuit_LH0.fval
@@ -87,7 +87,9 @@ llh_H1 = minuit_LH1.fval
 
 lambda_x = -2 * (llh_H0 - llh_H1)
 
+print('llh_H0')
 print(llh_H0)
+print('llh_H1')
 print(llh_H1)
 print(lambda_x)
 
