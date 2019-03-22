@@ -132,23 +132,55 @@ Numerical and graphical results are contained in figure \ref{p4_seawater}.
   \makebox[\textwidth][c]{\includegraphics[width = 1.5\linewidth]{../p4_seawater}}
   \caption{Problem 4.
   After generating one lambda, I was surprised when the value was several orders of magnitude larger than 1.
-  I therefore generated 100 lambdas and plotted the distribution, which seems to fit nicely with a gaussian.
+  I therefore generated 100 lambdas and plotted the distribution, which seems to fit nicely with a gaussian distribution.
 The distribution of the values as a gaussian with mean 285 and sigma 22 demonstrates that the values of lambda can be estimated to fall in the interval $(241, 329)$ with 95\% confidence. }
   \label{p4_seawater}
 \end{figure}
 
 \section{Problem 5 - Particles}
 \subsection{Problem 5a and 5b}
-
 \begin{figure}[H]
   \includegraphics[width=\linewidth]{../p5_llhratios}
   \caption{Problem 5}
   \label{p5_llhratios}
 \end{figure}
 
+\subsubsection{Problem 5b}
+Too see whether the distribution is actually chi squared distributed, I did a KS test as demonstrated in figure \ref{p4_seawater}.
+Immidiately , I could see that the distributions lined up rather well.
+The p value close to 0.05 is also a good indicator that the values are chi square distributed, as one would expect if the samples are from the same distribution.
+As can also be seen in the figure, the number of pseudo-experiments with a test statistic over 2.706 is also comparable (11 observed vs 10 expected) to what one would expect from a chi square distributed test statistic.
+
+
+
 \subsection{problem 5c }
-Using all 20000 events for a LLH test ...
+Using all 20000 events for a LLH test, I get the following values for the likelihoods.
 
+For the null hypothesis \( H_0 : b = 1.0 \), I get an LLH of \(LLH_0 = -29653.08\), for the best fit parameters \(\sigma_t = 0.618, b = 1.0  \).
 
+For the test hypothesis \( H_1 : b \neq 1.0 \), I get an LLH of \(LLH_1 = -29652.74\), for the best fit parameters \(\sigma_t = 0.619, b = 0.993 \).
+
+Hence,
+\[
+\Lambda = -2 * ( LLH_0 - LLH_1 ) = 1.358
+\]
+Which gives us a chi square integrated value \[\int_{1.358}^{\infty}\chi^2(df= 1) = 0.244\]
+Where we have 1 degree of freedom between the two models (one free parameter).
+
+In order to reject a hypothesis at a 3 sigma threshold, the result needs to have a test statistic (chi square) value higher than 9. ($p = 0.0027$)
+As this model does not have this, we can NOT reject the null hypothesis.
+
+I was surprised that I found such a large difference in the two approaches to finding a lambda, and tried to part 5a and 5b with RANDOM chunks of data, instead of splitting periodically.
+However, I found no significant changes between the randomly sampled chunks and the periodically split chunks.
+Thus, I can conclude that the different $\lambda$ values are not due to a designed way of making the data chunks, and that the ordering of the points are uninmportant.
+The file in question is attached as \verb|p5_llhratios_random.pdf|.
+
+In order to get a bit wiser on these results, I plotted the two results in figure \ref{p5_sanit}, from which we can clearly see that the two functions are substantially equivalent.
+\begin{figure}
+  \includegraphics[width=\linewidth]{../p5c_sanity}
+  \caption{Visualization of the null hypothesis vs test hypothesis for problem 5c. Subplots show the 1 sigma symmetric error returned from minuit, except for $b_0$, which was fixed.
+  Clearly, the two are not distinguishable using conventional chi-by-eye techniques. }
+  \label{p5_sanit}
+\end{figure}
 
 \end{document}

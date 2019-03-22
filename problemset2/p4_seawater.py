@@ -143,7 +143,7 @@ ins = plot_gaussian(data=np.array(mc_ratios), ax=ins, nBins=15, short_text=True)
 ins.set_title('Distribution of {} $\lambda$s'.format(len(mc_ratios)))
 
 axs.set_title('Sea Surface Water Temperatures')
-axs.set_xlabel('Temperature')
+axs.set_xlabel('Temperature (C)')
 axs.set_ylabel('$P_{KDE}$')
 axs.set_ylim(0, 1)
 

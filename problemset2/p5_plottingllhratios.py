@@ -8,6 +8,7 @@ import lib.lib_math as lm
 
 # import data
 fname_data = list(Path.cwd().glob('*llhratios.txt'))[0]
+# fname_data = list(Path.cwd().glob('*llhratios_random.txt'))[0]
 
 data = np.loadtxt(fname_data)
 
@@ -82,7 +83,7 @@ ax.bar(hist_x, hist_y, barwidth, label = 'Hist of values', alpha=0.5, color = 'x
 ax.axvline(2.706, label='{} out of 100 are above 2.706'.format(countpt), color='xkcd:hot pink', linestyle='--')
 
 ax.set_title('100 pseudo experiments of llh values')
-ax.set_xlabel('$-2 *ln( \lambda)$')
+ax.set_xlabel('$ \Lambda$')
 ax.set_ylabel('Frequency')
 ax.legend()
 
@@ -103,11 +104,6 @@ ax2.plot(hist_x, chi2_c, ls='steps', label = '$\int_{{0}}^{{x}}\chi^2(df= {})$'.
                                                                           ), alpha=0.5, color = 'xkcd:light blue')
 # ax2.plot(xarr_smooth, stats.chi2(dof).cdf(xarr_smooth),label = 'Chi2 Distribution (CS)',alpha=0.5, color = 'xkcd:light blue',)
 
-
-
-#
-# ax2.bar(hist_x, hist_y, barwidth, label = 'Hist of values', alpha=0.5, edgecolor = 'red')
-# ax2.bar(hist_x, chi2_ys, barwidth, label = 'Chi2 Distribution', alpha=0.5)
 
 ax2.set_title('KS test stat = {:.3f}, pval = {:.3f}'.format(*pval_KS))
 

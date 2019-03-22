@@ -43,7 +43,7 @@ pdf = chi2.pdf(arr_x, dof)
 
 fig, ax = plt.subplots(figsize=(6, 4.5))
 
-ax.plot(pdf, arr_x, color='xkcd:forest green', linewidth=5)
+ax.plot(arr_x,pdf, color='xkcd:forest green', linewidth=5)
 
 ax.set_xlabel('$\chi^2$')
 

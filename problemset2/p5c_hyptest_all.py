@@ -8,22 +8,14 @@ import scipy.stats
 import matplotlib.pyplot as plt
 
 
-# import warnings
-# warnings.filterwarnings("ignore")
+import warnings
+warnings.filterwarnings("ignore")
 
-#
-# def make_integrand(t,b,s):
-#     def integrand(t_p):
-#         return np.exp(-(t - t_p) ** 2 / (2 * s ** 2)) / (np.sqrt(2 * np.pi) * s) * (np.exp(-t_p / b) / b)
-#     return integrand
+
 
 def integrand(t_p, t, b, s):
     return np.exp(-(t - t_p) ** 2 / (2 * s ** 2)) / (np.sqrt(2 * np.pi) * s) * (np.exp(-t_p / b) / b)
 
-
-# def expected_pdf(t, b, sigma):
-#     f = quad( make_integrand(t,b,sigma), 0, np.inf )[0]
-#     return f
 
 def expected_pdf(t, b, sigma):
     # Make t iterable if it is only a float/int
@@ -63,10 +55,10 @@ def chunks(l, n):
 
 
 # set pars
-init_sigma = 0.7
-step_sigma = 0.1
+init_sigma = 0.615
+# step_sigma = 0.1
 init_b = 1.0
-step_b = 0.5
+# step_b = 0.5
 
 # import data
 
@@ -85,13 +77,16 @@ minuit_LH1.migrad()
 llh_H0 = minuit_LH0.fval
 llh_H1 = minuit_LH1.fval
 
-lambda_x = -2 * (llh_H0 - llh_H1)
+lambda_x = (llh_H0 - llh_H1)
 
 print('llh_H0')
 print(llh_H0)
 print('llh_H1')
 print(llh_H1)
 print(lambda_x)
+#
+
+
 
 '''
 **************************************************************************************
