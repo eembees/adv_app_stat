@@ -4,7 +4,7 @@ from pathlib import Path
 from scipy import stats
 import lib.lib_math as lm
 
-# plt.xkcd()
+plt.xkcd()
 
 # import data
 fname_data = list(Path.cwd().glob('*llhratios.txt'))[0]
@@ -110,4 +110,5 @@ ax2.set_title('KS test stat = {:.3f}, pval = {:.3f}'.format(*pval_KS))
 ax2.legend(loc='lower right')
 
 fig.tight_layout()
-fig.savefig('p5_llhratios.pdf')
+fig.savefig('p5_llhratios_xkcd.pdf')
+# fig.savefig('p5_llhratios.pdf')

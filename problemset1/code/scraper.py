@@ -27,11 +27,6 @@ class BasketSpider(scrapy.Spider):
 
     def parse(self, response):
         year  = str(response)[-5:-1]
-        # # First get col names
-        # col_names = []
-        #
-        # table_head = response.xpath('//*[@class="thead2"]')
-        # col_names_container = table_head[0].xpath('th//a')
 
         ## INSTEAD of scraping Row names (redundant and unnecessary),
         ## define manually

@@ -59,6 +59,7 @@ ax.set_title('Area of arbitrary polygon\n area = {}/{} = {}'.format(counter, num
 ax.legend()
 
 # plt.show()
-fig.savefig('p2_xkcd.pdf')
+# fig.savefig('p2_bat.pdf')
+fig.savefig('p2_bat_xkcd.pdf')
 
 

@@ -9,7 +9,7 @@ from sklearn.neighbors.kde import KernelDensity
 from pathlib import Path
 
 
-# plt.xkcd()
+plt.xkcd()
 
 
 # custom functions from lib modified
@@ -150,4 +150,4 @@ axs.set_ylim(0, 1)
 legend = axs.legend(loc='upper right')
 
 figs.tight_layout()
-figs.savefig('p4_seawater.pdf')
+figs.savefig('p4_seawater_xkcd.pdf')

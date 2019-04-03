@@ -7,6 +7,8 @@ import lib.lib_math as lm
 import scipy.stats
 import matplotlib.pyplot as plt
 
+plt.xkcd()
+
 # functions
 
 def integrand(t_p, t, b, s):
@@ -86,7 +88,7 @@ yarr0 = pdf_h0(xarr)
 yarr1 = pdf_h1(xarr)
 
 # plot the best fit values
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(10,7.5))
 
 ax.bar(hist_x, hist_y, barwidth, label = 'Hist of values', alpha=0.5, color = 'xkcd:dark red')
 
@@ -103,7 +105,7 @@ ax.plot(xarr, yarr1,
         lw=0.5,
         )
 
-ax.set_title('Hypothesis testing - sanity test for all particle measurements')
+ax.set_title('Hypothesis testing')
 
 ax.legend(loc='lower right')
 
@@ -136,7 +138,8 @@ ins2.set_xticklabels(labels2)
 
 fig.tight_layout()
 
-fig.savefig('p5c_sanity.pdf')
+fig.savefig('p5c_sanity_xkcd.pdf')
+# fig.savefig('p5c_sanity.pdf')
 
 print(1 - scipy.stats.chi2.cdf(lamb, 1))
 

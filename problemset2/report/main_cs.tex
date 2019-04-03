@@ -3,6 +3,9 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage[english]{babel}
 \usepackage{graphicx, lipsum}
+\usepackage{fontspec}
+\setmainfont{Comic Sans MS}
+
 
 % \usepackage{graphics} % for pdf, bitmapped graphics files
 % \usepackage{epsfig} % for postscript graphics files
@@ -23,7 +26,7 @@
   \begin{figure}[H]
       % \vspace*{-2cm}
       \makebox[\linewidth]{
-      \includegraphics[width=1.5\linewidth]{../p1_chi2.pdf}
+      \includegraphics[width=1.5\linewidth]{../p1_chi2_xkcd.pdf}
       }
       % \vfill
   \end{figure}
@@ -39,7 +42,7 @@ The area (0.166) also seems appropriate upon visual inspection.
 
 \begin{figure}
   \makebox[\linewidth][c]{
-  \includegraphics[width=\linewidth]{../p2_bat.pdf}
+  \includegraphics[width=\linewidth]{../p2_bat_xkcd.pdf}
   }
   \caption{Problem 2}
   \label{p2_bat}
@@ -129,11 +132,11 @@ Numerical and graphical results are contained in figure \ref{p4_seawater}.
 
 \begin{figure}[H]
   \centering
-  \makebox[\textwidth][c]{\includegraphics[width = 1.5\linewidth]{../p4_seawater}}
+  \makebox[\textwidth][c]{\includegraphics[width = 1.5\linewidth]{../p4_seawater_xkcd}}
   \caption{Problem 4.
   After generating one lambda, I was surprised when the value was several orders of magnitude larger than 1.
   I therefore generated 100 lambdas and plotted the distribution, which seems to fit nicely with a gaussian distribution.
-The distribution of the values as a gaussian with mean 285 and sigma 22 demonstrates that the values of lambda can be estimated to fall in the interval $(241, 329)$ with 95\% confidence.
+The distribution of the values as a gaussian with mean 285 and sigma 22 demonstrates that the values of lambda can be estimated to fall in the interval $(238, 322)$ with 95\% confidence.
 We can therefore directly conclude that because our lambdas are significantly larger than one, we can not under any significance level reject the null hypothesis.
 The data generated from the 1997 KDE is definitely not compatible with the 2007 KDE PDF. }
   \label{p4_seawater}
@@ -142,7 +145,7 @@ The data generated from the 1997 KDE is definitely not compatible with the 2007 
 \section{Problem 5 - Particles}
 \subsection{Problem 5a and 5b}
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{../p5_llhratios}
+  \includegraphics[width=\linewidth]{../p5_llhratios_xkcd}
   \caption{Problem 5}
   \label{p5_llhratios}
 \end{figure}
@@ -179,7 +182,7 @@ The file in question is attached as \verb|p5_llhratios_random.pdf|.
 
 In order to get a bit wiser on these results, I plotted the two results in figure \ref{p5_sanit}, from which we can clearly see that the two functions are substantially equivalent.
 \begin{figure}
-  \includegraphics[width=\linewidth]{../p5c_sanity}
+  \includegraphics[width=\linewidth]{../p5c_sanity_xkcd}
   \caption{Visualization of the null hypothesis vs test hypothesis for problem 5c. Subplots show the 1 sigma symmetric error returned from minuit, except for $b_0$, which was fixed.
   Clearly, the two are not distinguishable using conventional chi-by-eye techniques. }
   \label{p5_sanit}
