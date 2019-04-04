@@ -1,0 +1,1054 @@
+booster[0]:
+0:[TimeDifference<114475] yes=1,no=2,missing=1
+	1:[R1<1] yes=3,no=4,missing=3
+		3:[TimeDifference<23825] yes=7,no=8,missing=7
+			7:[TimeDifference<23410] yes=15,no=16,missing=15
+				15:[Neighbourhood<39] yes=31,no=32,missing=31
+					31:[Age<50] yes=57,no=58,missing=57
+						57:leaf=0.150000006
+						58:leaf=-0.150000006
+					32:[Neighbourhood<67] yes=59,no=60,missing=59
+						59:leaf=-0.41538465
+						60:leaf=-0
+				16:leaf=0.300000012
+			8:[TimeDifference<46317] yes=17,no=18,missing=17
+				17:leaf=-0.543962836
+				18:[Age<18] yes=33,no=34,missing=33
+					33:[TimeDifference<57970] yes=61,no=62,missing=61
+						61:leaf=-0.485714316
+						62:leaf=-0.308108121
+					34:[TimeDifference<46383] yes=63,no=64,missing=63
+						63:leaf=-0
+						64:leaf=-0.527233362
+		4:[Age<20] yes=9,no=10,missing=9
+			9:[Age<3] yes=19,no=20,missing=19
+				19:[TimeDifference<35613] yes=35,no=36,missing=35
+					35:leaf=-0
+					36:leaf=-0.400000036
+				20:[TimeDifference<29048] yes=37,no=38,missing=37
+					37:[Age<13] yes=65,no=66,missing=65
+						65:leaf=0.0666666701
+						66:leaf=-0.200000018
+					38:[Neighbourhood<70] yes=67,no=68,missing=67
+						67:leaf=0.325000018
+						68:leaf=-0.0666666701
+			10:[AppointmentDay<1] yes=21,no=22,missing=21
+				21:leaf=-0.443478286
+				22:[Neighbourhood<41] yes=39,no=40,missing=39
+					39:[TimeDifference<38160] yes=69,no=70,missing=69
+						69:leaf=-0.242553204
+						70:leaf=0.0439024381
+					40:[Age<30] yes=71,no=72,missing=71
+						71:leaf=-0.0352941193
+						72:leaf=-0.333333373
+	2:[R1<1] yes=5,no=6,missing=5
+		5:[Age<46] yes=11,no=12,missing=11
+			11:[TimeDifference<655735] yes=23,no=24,missing=23
+				23:[Age<29] yes=41,no=42,missing=41
+					41:[Age<12] yes=73,no=74,missing=73
+						73:leaf=-0.309348434
+						74:leaf=-0.203128502
+					42:[Alcoholism<1] yes=75,no=76,missing=75
+						75:leaf=-0.349848926
+						76:leaf=-0.0514285751
+				24:[Neighbourhood<41] yes=43,no=44,missing=43
+					43:[SMS_received<1] yes=77,no=78,missing=77
+						77:leaf=-0.108626977
+						78:leaf=-0.199664727
+					44:[TimeDifference<4804134] yes=79,no=80,missing=79
+						79:leaf=-0.24131456
+						80:leaf=0.0444444455
+			12:[TimeDifference<293849] yes=25,no=26,missing=25
+				25:[TimeDifference<114673] yes=45,no=46,missing=45
+					45:leaf=-0
+					46:[Age<90] yes=81,no=82,missing=81
+						81:leaf=-0.406163663
+						82:leaf=-0.0666666701
+				26:[SMS_received<1] yes=47,no=48,missing=47
+					47:[Neighbourhood<59] yes=83,no=84,missing=83
+						83:leaf=-0.325550228
+						84:leaf=-0.237623766
+					48:[TimeDifference<294299] yes=85,no=86,missing=85
+						85:leaf=0.150000006
+						86:leaf=-0.373866677
+		6:[Age<52] yes=13,no=14,missing=13
+			13:[TimeDifference<3634452] yes=27,no=28,missing=27
+				27:[TimeDifference<579059] yes=49,no=50,missing=49
+					49:[TimeDifference<576852] yes=87,no=88,missing=87
+						87:leaf=0.34375003
+						88:leaf=-0.150000006
+					50:[Age<50] yes=89,no=90,missing=89
+						89:leaf=0.405607492
+						90:leaf=0.150000006
+				28:[Age<26] yes=51,no=52,missing=51
+					51:[Neighbourhood<56] yes=91,no=92,missing=91
+						91:leaf=0.339130431
+						92:leaf=-0
+					52:[Age<33] yes=93,no=94,missing=93
+						93:leaf=-0.150000006
+						94:leaf=0.100000009
+			14:[TimeDifference<314091] yes=29,no=30,missing=29
+				29:[TimeDifference<143837] yes=53,no=54,missing=53
+					53:[Neighbourhood<41] yes=95,no=96,missing=95
+						95:leaf=0.200000018
+						96:leaf=-0.0666666701
+					54:leaf=0.367741942
+				30:[TimeDifference<789371] yes=55,no=56,missing=55
+					55:[ScheduledDay<4] yes=97,no=98,missing=97
+						97:leaf=-0.097674422
+						98:leaf=0.200000018
+					56:[Age<76] yes=99,no=100,missing=99
+						99:leaf=0.208163276
+						100:leaf=-0.0400000028
+booster[1]:
+0:[TimeDifference<117069] yes=1,no=2,missing=1
+	1:[R1<1] yes=3,no=4,missing=3
+		3:[TimeDifference<23825] yes=7,no=8,missing=7
+			7:[TimeDifference<21670] yes=15,no=16,missing=15
+				15:[Age<41] yes=31,no=32,missing=31
+					31:leaf=-0.0362483412
+					32:leaf=-0.327631831
+				16:[TimeDifference<22565] yes=33,no=34,missing=33
+					33:leaf=0.200249389
+					34:leaf=-0.0390572175
+			8:[AppointmentDay<1] yes=17,no=18,missing=17
+				17:[TimeDifference<67707] yes=35,no=36,missing=35
+					35:leaf=-0.43701908
+					36:leaf=-0.125113651
+				18:[ScheduledDay<1] yes=37,no=38,missing=37
+					37:[Age<45] yes=63,no=64,missing=63
+						63:leaf=-0.189256057
+						64:leaf=-0.314344794
+					38:[Age<20] yes=65,no=66,missing=65
+						65:leaf=-0.381274968
+						66:leaf=-0.413732111
+		4:[Age<19] yes=9,no=10,missing=9
+			9:[Age<3] yes=19,no=20,missing=19
+				19:[TimeDifference<35613] yes=39,no=40,missing=39
+					39:leaf=-0
+					40:leaf=-0.329610318
+				20:[Neighbourhood<36] yes=41,no=42,missing=41
+					41:leaf=0.356866896
+					42:[TimeDifference<34558] yes=67,no=68,missing=67
+						67:leaf=-0.119226165
+						68:leaf=0.227858275
+			10:[AppointmentDay<4] yes=21,no=22,missing=21
+				21:[TimeDifference<84285] yes=43,no=44,missing=43
+					43:[Neighbourhood<70] yes=69,no=70,missing=69
+						69:leaf=-0.23779799
+						70:leaf=-0.0458251573
+					44:leaf=0.0720570758
+				22:[ScheduledDay<4] yes=45,no=46,missing=45
+					45:leaf=0.251584738
+					46:[Gender<1] yes=71,no=72,missing=71
+						71:leaf=-0.348427713
+						72:leaf=0.15196158
+	2:[R1<1] yes=5,no=6,missing=5
+		5:[Age<42] yes=11,no=12,missing=11
+			11:[TimeDifference<752217] yes=23,no=24,missing=23
+				23:[Age<34] yes=47,no=48,missing=47
+					47:[Age<12] yes=73,no=74,missing=73
+						73:leaf=-0.228328615
+						74:leaf=-0.159825712
+					48:[Handcap<1] yes=75,no=76,missing=75
+						75:leaf=-0.252313465
+						76:leaf=0.117939562
+				24:[TimeDifference<813610] yes=49,no=50,missing=49
+					49:[SMS_received<1] yes=77,no=78,missing=77
+						77:leaf=0.290331662
+						78:leaf=-0.0470993407
+					50:[TimeDifference<4811572] yes=79,no=80,missing=79
+						79:leaf=-0.141851172
+						80:leaf=-0.0231883842
+			12:[Alcoholism<1] yes=25,no=26,missing=25
+				25:[Handcap<2] yes=51,no=52,missing=51
+					51:[TimeDifference<746579] yes=81,no=82,missing=81
+						81:leaf=-0.27885884
+						82:leaf=-0.242187887
+					52:[AppointmentDay<3] yes=83,no=84,missing=83
+						83:leaf=0.251385748
+						84:leaf=-0.205956444
+				26:[Age<56] yes=53,no=54,missing=53
+					53:[Neighbourhood<38] yes=85,no=86,missing=85
+						85:leaf=-0.165553957
+						86:leaf=0.0701720342
+					54:[ScheduledDay<1] yes=87,no=88,missing=87
+						87:leaf=-0.0132532706
+						88:leaf=-0.301399291
+		6:[Age<47] yes=13,no=14,missing=13
+			13:[SMS_received<1] yes=27,no=28,missing=27
+				27:[TimeDifference<135311] yes=55,no=56,missing=55
+					55:[TimeDifference<122729] yes=89,no=90,missing=89
+						89:leaf=0.338455558
+						90:leaf=-0.078292042
+					56:[Age<4] yes=91,no=92,missing=91
+						91:leaf=0.149780855
+						92:leaf=0.347429544
+				28:[TimeDifference<316182] yes=57,no=58,missing=57
+					57:[Gender<1] yes=93,no=94,missing=93
+						93:leaf=-0.249535799
+						94:leaf=0.134516969
+					58:[TimeDifference<5486808] yes=95,no=96,missing=95
+						95:leaf=0.267230749
+						96:leaf=-0.0765125081
+			14:[TimeDifference<368602] yes=29,no=30,missing=29
+				29:[Age<57] yes=59,no=60,missing=59
+					59:leaf=0.374239802
+					60:[Diabetes<1] yes=97,no=98,missing=97
+						97:leaf=0.0596079864
+						98:leaf=0.364266485
+				30:[TimeDifference<1441256] yes=61,no=62,missing=61
+					61:[Neighbourhood<73] yes=99,no=100,missing=99
+						99:leaf=-0.0390876606
+						100:leaf=0.298168272
+					62:[Neighbourhood<10] yes=101,no=102,missing=101
+						101:leaf=-0.105943896
+						102:leaf=0.224656865
+booster[2]:
+0:[TimeDifference<110941] yes=1,no=2,missing=1
+	1:[R1<1] yes=3,no=4,missing=3
+		3:[TimeDifference<23825] yes=7,no=8,missing=7
+			7:[TimeDifference<23360] yes=15,no=16,missing=15
+				15:[Neighbourhood<39] yes=31,no=32,missing=31
+					31:leaf=0.0100662988
+					32:[Gender<1] yes=57,no=58,missing=57
+						57:leaf=-0.0649484545
+						58:leaf=-0.304408669
+				16:leaf=0.182675779
+			8:[AppointmentDay<1] yes=17,no=18,missing=17
+				17:[Diabetes<1] yes=33,no=34,missing=33
+					33:[TimeDifference<24970] yes=59,no=60,missing=59
+						59:leaf=-0.114164822
+						60:leaf=-0.374258637
+					34:[Neighbourhood<68] yes=61,no=62,missing=61
+						61:leaf=-0.305093408
+						62:leaf=-0.137897328
+				18:[ScheduledDay<1] yes=35,no=36,missing=35
+					35:[Age<50] yes=63,no=64,missing=63
+						63:leaf=-0.139599055
+						64:leaf=-0.275662243
+					36:[Age<20] yes=65,no=66,missing=65
+						65:leaf=-0.312400401
+						66:leaf=-0.345917881
+		4:[Age<16] yes=9,no=10,missing=9
+			9:[Age<3] yes=19,no=20,missing=19
+				19:[TimeDifference<35613] yes=37,no=38,missing=37
+					37:leaf=-0
+					38:leaf=-0.283285141
+				20:[Neighbourhood<69] yes=39,no=40,missing=39
+					39:[TimeDifference<55631] yes=67,no=68,missing=67
+						67:leaf=0.301610053
+						68:leaf=0.0167474095
+					40:leaf=-0.0883641988
+			10:[AppointmentDay<1] yes=21,no=22,missing=21
+				21:leaf=-0.322637647
+				22:[Neighbourhood<41] yes=41,no=42,missing=41
+					41:[ScheduledDay<1] yes=69,no=70,missing=69
+						69:leaf=0.231558293
+						70:leaf=-0.0695349425
+					42:[TimeDifference<51781] yes=71,no=72,missing=71
+						71:leaf=-0.118852004
+						72:leaf=-0.376612067
+	2:[R1<1] yes=5,no=6,missing=5
+		5:[Age<46] yes=11,no=12,missing=11
+			11:[TimeDifference<1410298] yes=23,no=24,missing=23
+				23:[Age<34] yes=43,no=44,missing=43
+					43:[Age<12] yes=73,no=74,missing=73
+						73:leaf=-0.162785679
+						74:leaf=-0.102499075
+					44:[ScheduledDay<4] yes=75,no=76,missing=75
+						75:leaf=-0.205604896
+						76:leaf=-0.101351224
+				24:[Neighbourhood<34] yes=45,no=46,missing=45
+					45:[TimeDifference<2627707] yes=77,no=78,missing=77
+						77:leaf=-0.0657840744
+						78:leaf=0.0614762045
+					46:[TimeDifference<1517297] yes=79,no=80,missing=79
+						79:leaf=0.0956379473
+						80:leaf=-0.114291534
+			12:[AppointmentDay<2] yes=25,no=26,missing=25
+				25:[SMS_received<1] yes=47,no=48,missing=47
+					47:[Neighbourhood<10] yes=81,no=82,missing=81
+						81:leaf=-0.0284746569
+						82:leaf=-0.157121912
+					48:[ScheduledDay<2] yes=83,no=84,missing=83
+						83:leaf=-0.233578548
+						84:leaf=-0.174835235
+				26:[ScheduledDay<3] yes=49,no=50,missing=49
+					49:[TimeDifference<5578945] yes=85,no=86,missing=85
+						85:leaf=-0.235291481
+						86:leaf=-0.122026838
+					50:[Neighbourhood<37] yes=87,no=88,missing=87
+						87:leaf=-0.0782519206
+						88:leaf=-0.222981617
+		6:[Age<52] yes=13,no=14,missing=13
+			13:[TimeDifference<3634452] yes=27,no=28,missing=27
+				27:[Neighbourhood<58] yes=51,no=52,missing=51
+					51:[Age<8] yes=89,no=90,missing=89
+						89:leaf=0.0543033034
+						90:leaf=0.219149649
+					52:[TimeDifference<1269022] yes=91,no=92,missing=91
+						91:leaf=0.193099573
+						92:leaf=0.369799107
+				28:[Age<13] yes=53,no=54,missing=53
+					53:leaf=0.257585973
+					54:[AppointmentDay<3] yes=93,no=94,missing=93
+						93:leaf=-0.0987638682
+						94:leaf=0.149918407
+			14:[Neighbourhood<7] yes=29,no=30,missing=29
+				29:leaf=0.283684909
+				30:[ScheduledDay<4] yes=55,no=56,missing=55
+					55:[ScheduledDay<3] yes=95,no=96,missing=95
+						95:leaf=0.0686303303
+						96:leaf=-0.110829301
+					56:[Neighbourhood<39] yes=97,no=98,missing=97
+						97:leaf=0.061360646
+						98:leaf=0.298602641
+booster[3]:
+0:[TimeDifference<110941] yes=1,no=2,missing=1
+	1:[R1<1] yes=3,no=4,missing=3
+		3:[TimeDifference<24965] yes=7,no=8,missing=7
+			7:[TimeDifference<24856] yes=15,no=16,missing=15
+				15:[Age<69] yes=31,no=32,missing=31
+					31:[TimeDifference<22425] yes=63,no=64,missing=63
+						63:leaf=-0.0346523747
+						64:leaf=-0.296279371
+					32:leaf=0.131472588
+				16:[Age<40] yes=33,no=34,missing=33
+					33:leaf=-0.0753427744
+					34:leaf=0.396763176
+			8:[TimeDifference<40873] yes=17,no=18,missing=17
+				17:[Age<8] yes=35,no=36,missing=35
+					35:[Neighbourhood<6] yes=65,no=66,missing=65
+						65:leaf=-0.162550971
+						66:leaf=-0.35014084
+					36:[Age<20] yes=67,no=68,missing=67
+						67:leaf=-0.236920193
+						68:leaf=-0.307428122
+				18:[Age<17] yes=37,no=38,missing=37
+					37:[Age<5] yes=69,no=70,missing=69
+						69:leaf=-0.294105202
+						70:leaf=-0.162853703
+					38:[AppointmentDay<3] yes=71,no=72,missing=71
+						71:leaf=-0.30461213
+						72:leaf=-0.241690204
+		4:[Age<16] yes=9,no=10,missing=9
+			9:[Age<3] yes=19,no=20,missing=19
+				19:[Gender<1] yes=39,no=40,missing=39
+					39:leaf=0.0288680494
+					40:leaf=-0.234993771
+				20:[Neighbourhood<69] yes=41,no=42,missing=41
+					41:[TimeDifference<55631] yes=73,no=74,missing=73
+						73:leaf=0.240585268
+						74:leaf=0.0138863968
+					42:leaf=-0.0735952556
+			10:[TimeDifference<34199] yes=21,no=22,missing=21
+				21:[Neighbourhood<70] yes=43,no=44,missing=43
+					43:[Neighbourhood<27] yes=75,no=76,missing=75
+						75:leaf=-0.0158153195
+						76:leaf=-0.341618925
+					44:[Age<59] yes=77,no=78,missing=77
+						77:leaf=-0.00451929588
+						78:leaf=0.176098958
+				22:[TimeDifference<36029] yes=45,no=46,missing=45
+					45:[AppointmentDay<3] yes=79,no=80,missing=79
+						79:leaf=0.0829563737
+						80:leaf=0.333497345
+					46:[Neighbourhood<56] yes=81,no=82,missing=81
+						81:leaf=-0.00355994771
+						82:leaf=-0.294588417
+	2:[R1<1] yes=5,no=6,missing=5
+		5:[Age<46] yes=11,no=12,missing=11
+			11:[SMS_received<1] yes=23,no=24,missing=23
+				23:[TimeDifference<288758] yes=47,no=48,missing=47
+					47:[AppointmentDay<4] yes=83,no=84,missing=83
+						83:leaf=-0.156864211
+						84:leaf=-0.0325254761
+					48:[TimeDifference<4892859] yes=85,no=86,missing=85
+						85:leaf=-0.048579473
+						86:leaf=0.122322783
+				24:[Age<12] yes=49,no=50,missing=49
+					49:[TimeDifference<4842587] yes=87,no=88,missing=87
+						87:leaf=-0.168872714
+						88:leaf=0.0673906058
+					50:[Age<31] yes=89,no=90,missing=89
+						89:leaf=-0.0538189337
+						90:leaf=-0.13220349
+			12:[TimeDifference<747244] yes=25,no=26,missing=25
+				25:[Neighbourhood<79] yes=51,no=52,missing=51
+					51:[TimeDifference<645020] yes=91,no=92,missing=91
+						91:leaf=-0.163943142
+						92:leaf=-0.250032783
+					52:[Gender<1] yes=93,no=94,missing=93
+						93:leaf=0.221447632
+						94:leaf=-0.257016599
+				26:[Neighbourhood<57] yes=53,no=54,missing=53
+					53:[Gender<1] yes=95,no=96,missing=95
+						95:leaf=-0.175980702
+						96:leaf=-0.0940123796
+					54:[TimeDifference<826329] yes=97,no=98,missing=97
+						97:leaf=0.194883868
+						98:leaf=-0.0874586254
+		6:[Age<47] yes=13,no=14,missing=13
+			13:[ScheduledDay<3] yes=27,no=28,missing=27
+				27:[ScheduledDay<1] yes=55,no=56,missing=55
+					55:[Neighbourhood<12] yes=99,no=100,missing=99
+						99:leaf=-0.0499125719
+						100:leaf=0.17582272
+					56:[TimeDifference<2901342] yes=101,no=102,missing=101
+						101:leaf=0.202661291
+						102:leaf=0.307630479
+				28:[TimeDifference<4279888] yes=57,no=58,missing=57
+					57:[Age<4] yes=103,no=104,missing=103
+						103:leaf=-0.0946675465
+						104:leaf=0.147440404
+					58:leaf=-0.166196719
+			14:[TimeDifference<368602] yes=29,no=30,missing=29
+				29:[AppointmentDay<4] yes=59,no=60,missing=59
+					59:[TimeDifference<140715] yes=105,no=106,missing=105
+						105:leaf=0.0213366747
+						106:leaf=0.253651828
+					60:[Neighbourhood<41] yes=107,no=108,missing=107
+						107:leaf=0.0904237255
+						108:leaf=-0.109231241
+				30:[TimeDifference<608664] yes=61,no=62,missing=61
+					61:[Neighbourhood<65] yes=109,no=110,missing=109
+						109:leaf=-0.237282306
+						110:leaf=0.206650272
+					62:[SMS_received<1] yes=111,no=112,missing=111
+						111:leaf=-0.0250492487
+						112:leaf=0.13728939
+booster[4]:
+0:[TimeDifference<110941] yes=1,no=2,missing=1
+	1:[R1<1] yes=3,no=4,missing=3
+		3:[AppointmentDay<1] yes=7,no=8,missing=7
+			7:[Diabetes<1] yes=15,no=16,missing=15
+				15:[Age<89] yes=31,no=32,missing=31
+					31:[TimeDifference<67437] yes=61,no=62,missing=61
+						61:leaf=-0.302201957
+						62:leaf=-0.0611706711
+					32:leaf=-0.0412850529
+				16:[Neighbourhood<25] yes=33,no=34,missing=33
+					33:leaf=-0.292270839
+					34:[Neighbourhood<31] yes=63,no=64,missing=63
+						63:leaf=0.194228739
+						64:leaf=-0.184650019
+			8:[ScheduledDay<1] yes=17,no=18,missing=17
+				17:[Age<48] yes=35,no=36,missing=35
+					35:[Neighbourhood<60] yes=65,no=66,missing=65
+						65:leaf=-0.0839344561
+						66:leaf=0.218658641
+					36:[TimeDifference<28228] yes=67,no=68,missing=67
+						67:leaf=-0.00365074794
+						68:leaf=-0.195157632
+				18:[AppointmentDay<2] yes=37,no=38,missing=37
+					37:[Neighbourhood<70] yes=69,no=70,missing=69
+						69:leaf=-0.291340351
+						70:leaf=-0.198432833
+					38:[ScheduledDay<2] yes=71,no=72,missing=71
+						71:leaf=-0.0607336201
+						72:leaf=-0.246478871
+		4:[AppointmentDay<1] yes=9,no=10,missing=9
+			9:[Age<14] yes=19,no=20,missing=19
+				19:leaf=0.0914979428
+				20:[TimeDifference<47087] yes=39,no=40,missing=39
+					39:leaf=-0.344502538
+					40:leaf=-0.104853131
+			10:[Age<32] yes=21,no=22,missing=21
+				21:[Age<4] yes=41,no=42,missing=41
+					41:[Neighbourhood<50] yes=73,no=74,missing=73
+						73:leaf=-0.198860332
+						74:leaf=0.0495153628
+					42:[Gender<1] yes=75,no=76,missing=75
+						75:leaf=0.0316552296
+						76:leaf=0.218921676
+				22:[Age<47] yes=43,no=44,missing=43
+					43:[Neighbourhood<15] yes=77,no=78,missing=77
+						77:leaf=0.0826054364
+						78:leaf=-0.269981146
+					44:[TimeDifference<45774] yes=79,no=80,missing=79
+						79:leaf=-0.0758627951
+						80:leaf=0.139439523
+	2:[R1<1] yes=5,no=6,missing=5
+		5:[Age<29] yes=11,no=12,missing=11
+			11:[Age<21] yes=23,no=24,missing=23
+				23:[SMS_received<1] yes=45,no=46,missing=45
+					45:[Neighbourhood<39] yes=81,no=82,missing=81
+						81:leaf=-0.00167379086
+						82:leaf=-0.0755739436
+					46:[TimeDifference<5930269] yes=83,no=84,missing=83
+						83:leaf=-0.0966881588
+						84:leaf=0.209652841
+				24:[TimeDifference<637652] yes=47,no=48,missing=47
+					47:[TimeDifference<568548] yes=85,no=86,missing=85
+						85:leaf=-0.0509519018
+						86:leaf=-0.245702386
+					48:[TimeDifference<649349] yes=87,no=88,missing=87
+						87:leaf=0.383071452
+						88:leaf=0.0285244416
+			12:[TimeDifference<656057] yes=25,no=26,missing=25
+				25:[TimeDifference<645020] yes=49,no=50,missing=49
+					49:[TimeDifference<630167] yes=89,no=90,missing=89
+						89:leaf=-0.126384243
+						90:leaf=0.0541355796
+					50:leaf=-0.327999413
+				26:[Age<60] yes=51,no=52,missing=51
+					51:[Gender<1] yes=91,no=92,missing=91
+						91:leaf=-0.0823167488
+						92:leaf=-0.0176469963
+					52:[Diabetes<1] yes=93,no=94,missing=93
+						93:leaf=-0.152255148
+						94:leaf=-0.0441403277
+		6:[Age<32] yes=13,no=14,missing=13
+			13:[ScheduledDay<4] yes=27,no=28,missing=27
+				27:[Age<20] yes=53,no=54,missing=53
+					53:[Neighbourhood<69] yes=95,no=96,missing=95
+						95:leaf=0.0765481219
+						96:leaf=0.264061183
+					54:[Gender<1] yes=97,no=98,missing=97
+						97:leaf=0.188391015
+						98:leaf=0.34983784
+				28:[TimeDifference<923209] yes=55,no=56,missing=55
+					55:[TimeDifference<372067] yes=99,no=100,missing=99
+						99:leaf=0.111390941
+						100:leaf=-0.300227165
+					56:[TimeDifference<3929233] yes=101,no=102,missing=101
+						101:leaf=0.259761959
+						102:leaf=-0.124425925
+			14:[ScheduledDay<4] yes=29,no=30,missing=29
+				29:[Diabetes<1] yes=57,no=58,missing=57
+					57:[Age<64] yes=103,no=104,missing=103
+						103:leaf=0.0502530932
+						104:leaf=-0.0880211294
+					58:[TimeDifference<351962] yes=105,no=106,missing=105
+						105:leaf=0.305167675
+						106:leaf=0.0679792017
+				30:[TimeDifference<5240062] yes=59,no=60,missing=59
+					59:[TimeDifference<291285] yes=107,no=108,missing=107
+						107:leaf=-0.0854598656
+						108:leaf=0.22635147
+					60:leaf=-0.138878241
+booster[5]:
+0:[TimeDifference<110941] yes=1,no=2,missing=1
+	1:[R1<1] yes=3,no=4,missing=3
+		3:[AppointmentDay<1] yes=7,no=8,missing=7
+			7:[Diabetes<1] yes=15,no=16,missing=15
+				15:[TimeDifference<25381] yes=31,no=32,missing=31
+					31:[Age<37] yes=61,no=62,missing=61
+						61:leaf=0.118536636
+						62:leaf=-0.217526272
+					32:[Age<89] yes=63,no=64,missing=63
+						63:leaf=-0.275129884
+						64:leaf=-0.0354580693
+				16:[Age<56] yes=33,no=34,missing=33
+					33:[Age<51] yes=65,no=66,missing=65
+						65:leaf=-0.234110728
+						66:leaf=0.196436331
+					34:[Neighbourhood<68] yes=67,no=68,missing=67
+						67:leaf=-0.241086215
+						68:leaf=-0.0182598978
+			8:[ScheduledDay<1] yes=17,no=18,missing=17
+				17:[Age<48] yes=35,no=36,missing=35
+					35:[Neighbourhood<60] yes=69,no=70,missing=69
+						69:leaf=-0.0629285574
+						70:leaf=0.146508276
+					36:[TimeDifference<58443] yes=71,no=72,missing=71
+						71:leaf=-0.0812466443
+						72:leaf=-0.26803714
+				18:[Age<30] yes=37,no=38,missing=37
+					37:[Age<7] yes=73,no=74,missing=73
+						73:leaf=-0.262236565
+						74:leaf=-0.152382255
+					38:[Age<89] yes=75,no=76,missing=75
+						75:leaf=-0.236034825
+						76:leaf=0.0198300499
+		4:[AppointmentDay<1] yes=9,no=10,missing=9
+			9:[Age<14] yes=19,no=20,missing=19
+				19:leaf=0.078601256
+				20:[Gender<1] yes=39,no=40,missing=39
+					39:leaf=-0.305435598
+					40:leaf=-0.0841303691
+			10:[Age<32] yes=21,no=22,missing=21
+				21:[AppointmentDay<2] yes=41,no=42,missing=41
+					41:[Gender<1] yes=77,no=78,missing=77
+						77:leaf=-0.219178557
+						78:leaf=0.195704237
+					42:[ScheduledDay<2] yes=79,no=80,missing=79
+						79:leaf=0.338651419
+						80:leaf=0.0471966378
+				22:[Age<46] yes=43,no=44,missing=43
+					43:[Neighbourhood<7] yes=81,no=82,missing=81
+						81:leaf=0.119217813
+						82:leaf=-0.236065015
+					44:[ScheduledDay<1] yes=83,no=84,missing=83
+						83:leaf=0.226020947
+						84:leaf=-0.0442503095
+	2:[R1<1] yes=5,no=6,missing=5
+		5:[Age<46] yes=11,no=12,missing=11
+			11:[TimeDifference<493346] yes=23,no=24,missing=23
+				23:[Alcoholism<1] yes=45,no=46,missing=45
+					45:[TimeDifference<113101] yes=85,no=86,missing=85
+						85:leaf=0.285551816
+						86:leaf=-0.0826296657
+					46:[Gender<1] yes=87,no=88,missing=87
+						87:leaf=0.343703449
+						88:leaf=-0.0230071247
+				24:[Neighbourhood<47] yes=47,no=48,missing=47
+					47:[Neighbourhood<40] yes=89,no=90,missing=89
+						89:leaf=-0.0280374028
+						90:leaf=0.0230966471
+					48:[AppointmentDay<2] yes=91,no=92,missing=91
+						91:leaf=-0.0125191612
+						92:leaf=-0.098793909
+			12:[AppointmentDay<2] yes=25,no=26,missing=25
+				25:[SMS_received<1] yes=49,no=50,missing=49
+					49:[ScheduledDay<1] yes=93,no=94,missing=93
+						93:leaf=0.0739360526
+						94:leaf=-0.0527474321
+					50:[Neighbourhood<26] yes=95,no=96,missing=95
+						95:leaf=-0.135583103
+						96:leaf=-0.0710712075
+				26:[ScheduledDay<3] yes=51,no=52,missing=51
+					51:[Neighbourhood<72] yes=97,no=98,missing=97
+						97:leaf=-0.109176256
+						98:leaf=-0.191591337
+					52:[Neighbourhood<32] yes=99,no=100,missing=99
+						99:leaf=0.0270165242
+						100:leaf=-0.109272368
+		6:[Age<32] yes=13,no=14,missing=13
+			13:[Neighbourhood<64] yes=27,no=28,missing=27
+				27:[Age<18] yes=53,no=54,missing=53
+					53:[Neighbourhood<7] yes=101,no=102,missing=101
+						101:leaf=0.289842069
+						102:leaf=0.00903752726
+					54:[AppointmentDay<2] yes=103,no=104,missing=103
+						103:leaf=0.0506413952
+						104:leaf=0.236718923
+				28:[TimeDifference<635950] yes=55,no=56,missing=55
+					55:[TimeDifference<482000] yes=105,no=106,missing=105
+						105:leaf=0.233139023
+						106:leaf=-0.169344097
+					56:[Age<22] yes=107,no=108,missing=107
+						107:leaf=0.290790945
+						108:leaf=0.126754552
+			14:[Neighbourhood<16] yes=29,no=30,missing=29
+				29:[Neighbourhood<11] yes=57,no=58,missing=57
+					57:[ScheduledDay<1] yes=109,no=110,missing=109
+						109:leaf=-0.0678456426
+						110:leaf=0.109108314
+					58:[AppointmentDay<2] yes=111,no=112,missing=111
+						111:leaf=-0.298998088
+						112:leaf=0.00608022511
+				30:[Neighbourhood<76] yes=59,no=60,missing=59
+					59:[Age<50] yes=113,no=114,missing=113
+						113:leaf=0.137546614
+						114:leaf=0.0451957546
+					60:[Age<46] yes=115,no=116,missing=115
+						115:leaf=-0.264134377
+						116:leaf=0.0614464618
+booster[6]:
+0:[TimeDifference<110941] yes=1,no=2,missing=1
+	1:[R1<1] yes=3,no=4,missing=3
+		3:[TimeDifference<46105] yes=7,no=8,missing=7
+			7:[TimeDifference<24965] yes=15,no=16,missing=15
+				15:[Neighbourhood<36] yes=31,no=32,missing=31
+					31:leaf=0.272873849
+					32:[ScheduledDay<1] yes=61,no=62,missing=61
+						61:leaf=0.0404413752
+						62:leaf=-0.179882959
+				16:[Age<8] yes=33,no=34,missing=33
+					33:[TimeDifference<41033] yes=63,no=64,missing=63
+						63:leaf=-0.265997022
+						64:leaf=-0.060734719
+					34:[Age<18] yes=65,no=66,missing=65
+						65:leaf=-0.118273862
+						66:leaf=-0.207067952
+			8:[AppointmentDay<3] yes=17,no=18,missing=17
+				17:[Age<17] yes=35,no=36,missing=35
+					35:[Neighbourhood<3] yes=67,no=68,missing=67
+						67:leaf=0.316187143
+						68:leaf=-0.107535817
+					36:[ScheduledDay<1] yes=69,no=70,missing=69
+						69:leaf=-0.160453618
+						70:leaf=-0.252147257
+				18:[ScheduledDay<3] yes=37,no=38,missing=37
+					37:[ScheduledDay<2] yes=71,no=72,missing=71
+						71:leaf=-0.197863311
+						72:leaf=0.168337733
+					38:[AppointmentDay<4] yes=73,no=74,missing=73
+						73:leaf=-0.201964736
+						74:leaf=-0.0459709466
+		4:[AppointmentDay<1] yes=9,no=10,missing=9
+			9:[Age<14] yes=19,no=20,missing=19
+				19:leaf=0.067599915
+				20:[Age<50] yes=39,no=40,missing=39
+					39:leaf=-0.277805418
+					40:leaf=-0.0585365407
+			10:[Diabetes<1] yes=21,no=22,missing=21
+				21:[Neighbourhood<23] yes=41,no=42,missing=41
+					41:[TimeDifference<31132] yes=75,no=76,missing=75
+						75:leaf=0.175761566
+						76:leaf=-0.252106607
+					42:[Neighbourhood<28] yes=77,no=78,missing=77
+						77:leaf=0.249803573
+						78:leaf=-0.0158592034
+				22:[Neighbourhood<19] yes=43,no=44,missing=43
+					43:leaf=0.316289574
+					44:leaf=-0.0930447504
+	2:[R1<1] yes=5,no=6,missing=5
+		5:[Age<29] yes=11,no=12,missing=11
+			11:[Age<12] yes=23,no=24,missing=23
+				23:[SMS_received<1] yes=45,no=46,missing=45
+					45:[TimeDifference<1847176] yes=79,no=80,missing=79
+						79:leaf=-0.0426198281
+						80:leaf=0.0711603165
+					46:[TimeDifference<4842587] yes=81,no=82,missing=81
+						81:leaf=-0.0902662352
+						82:leaf=0.0580644943
+				24:[Alcoholism<1] yes=47,no=48,missing=47
+					47:[TimeDifference<1432156] yes=83,no=84,missing=83
+						83:leaf=-0.0201933347
+						84:leaf=0.017554516
+					48:[TimeDifference<1003231] yes=85,no=86,missing=85
+						85:leaf=0.366345048
+						86:leaf=0.0629845187
+			12:[TimeDifference<295247] yes=25,no=26,missing=25
+				25:[ScheduledDay<4] yes=49,no=50,missing=49
+					49:[TimeDifference<147874] yes=87,no=88,missing=87
+						87:leaf=-0.0822517648
+						88:leaf=-0.1680035
+					50:[TimeDifference<233523] yes=89,no=90,missing=89
+						89:leaf=0.0676221326
+						90:leaf=-0.129955649
+				26:[TimeDifference<304369] yes=51,no=52,missing=51
+					51:[TimeDifference<303447] yes=91,no=92,missing=91
+						91:leaf=0.0644396096
+						92:leaf=0.423382491
+					52:[SMS_received<1] yes=93,no=94,missing=93
+						93:leaf=-0.0254073571
+						94:leaf=-0.0715096146
+		6:[Age<32] yes=13,no=14,missing=13
+			13:[SMS_received<1] yes=27,no=28,missing=27
+				27:[TimeDifference<469504] yes=53,no=54,missing=53
+					53:[AppointmentDay<3] yes=95,no=96,missing=95
+						95:leaf=0.315875977
+						96:leaf=0.10249979
+					54:[TimeDifference<635950] yes=97,no=98,missing=97
+						97:leaf=-0.0983319208
+						98:leaf=0.143461064
+				28:[TimeDifference<430024] yes=55,no=56,missing=55
+					55:[TimeDifference<292173] yes=99,no=100,missing=99
+						99:leaf=0.13769789
+						100:leaf=-0.23778899
+					56:[ScheduledDay<1] yes=101,no=102,missing=101
+						101:leaf=-0.0365781263
+						102:leaf=0.104596958
+			14:[TimeDifference<1179705] yes=29,no=30,missing=29
+				29:[ScheduledDay<1] yes=57,no=58,missing=57
+					57:[Neighbourhood<67] yes=103,no=104,missing=103
+						103:leaf=0.00295784883
+						104:leaf=-0.3732014
+					58:[TimeDifference<693201] yes=105,no=106,missing=105
+						105:leaf=0.0487070344
+						106:leaf=0.248487368
+				30:[TimeDifference<1432234] yes=59,no=60,missing=59
+					59:[TimeDifference<1256240] yes=107,no=108,missing=107
+						107:leaf=-0.403598815
+						108:leaf=-0.140391067
+					60:[ScheduledDay<1] yes=109,no=110,missing=109
+						109:leaf=0.189936563
+						110:leaf=0.0185704064
+booster[7]:
+0:[TimeDifference<114270] yes=1,no=2,missing=1
+	1:[R1<1] yes=3,no=4,missing=3
+		3:[AppointmentDay<1] yes=7,no=8,missing=7
+			7:[Diabetes<1] yes=15,no=16,missing=15
+				15:[TimeDifference<29769] yes=29,no=30,missing=29
+					29:[TimeDifference<29230] yes=57,no=58,missing=57
+						57:leaf=-0.199375808
+						58:leaf=0.115882128
+					30:[TimeDifference<67167] yes=59,no=60,missing=59
+						59:leaf=-0.243763328
+						60:leaf=-0.0304136146
+				16:[Neighbourhood<25] yes=31,no=32,missing=31
+					31:leaf=-0.240244865
+					32:[Neighbourhood<31] yes=61,no=62,missing=61
+						61:leaf=0.226269677
+						62:leaf=-0.0964080468
+			8:[ScheduledDay<1] yes=17,no=18,missing=17
+				17:[Age<53] yes=33,no=34,missing=33
+					33:[Age<2] yes=63,no=64,missing=63
+						63:leaf=-0.242191464
+						64:leaf=0.0660323352
+					34:[TimeDifference<58443] yes=65,no=66,missing=65
+						65:leaf=-0.0284336414
+						66:leaf=-0.266644835
+				18:[Neighbourhood<27] yes=35,no=36,missing=35
+					35:[AppointmentDay<2] yes=67,no=68,missing=67
+						67:leaf=-0.195565462
+						68:leaf=-0.0633146763
+					36:[Age<18] yes=69,no=70,missing=69
+						69:leaf=-0.11628335
+						70:leaf=-0.189658239
+		4:[TimeDifference<34199] yes=9,no=10,missing=9
+			9:[TimeDifference<31917] yes=19,no=20,missing=19
+				19:[Neighbourhood<18] yes=37,no=38,missing=37
+					37:[AppointmentDay<4] yes=71,no=72,missing=71
+						71:leaf=0.0130217914
+						72:leaf=0.28903088
+					38:[ScheduledDay<2] yes=73,no=74,missing=73
+						73:leaf=0.0782343596
+						74:leaf=-0.193349913
+				20:[Neighbourhood<67] yes=39,no=40,missing=39
+					39:leaf=-0.310002863
+					40:leaf=-0.0654128715
+			10:[TimeDifference<36029] yes=21,no=22,missing=21
+				21:[TimeDifference<34578] yes=41,no=42,missing=41
+					41:leaf=0.0107410457
+					42:leaf=0.314042121
+				22:[Neighbourhood<56] yes=43,no=44,missing=43
+					43:[TimeDifference<37838] yes=75,no=76,missing=75
+						75:leaf=-0.271250725
+						76:leaf=0.0784852281
+					44:[Age<17] yes=77,no=78,missing=77
+						77:leaf=-0.00720314868
+						78:leaf=-0.260982871
+	2:[R1<1] yes=5,no=6,missing=5
+		5:[Alcoholism<1] yes=11,no=12,missing=11
+			11:[Age<42] yes=23,no=24,missing=23
+				23:[Age<39] yes=45,no=46,missing=45
+					45:[Age<37] yes=79,no=80,missing=79
+						79:leaf=-0.021819422
+						80:leaf=-0.0975166187
+					46:[TimeDifference<1771378] yes=81,no=82,missing=81
+						81:leaf=-0.0179590154
+						82:leaf=0.154953524
+				24:[SMS_received<1] yes=47,no=48,missing=47
+					47:[TimeDifference<3513015] yes=83,no=84,missing=83
+						83:leaf=-0.0267825183
+						84:leaf=-0.126954913
+					48:[Neighbourhood<2] yes=85,no=86,missing=85
+						85:leaf=0.09695746
+						86:leaf=-0.0701353848
+			12:[Neighbourhood<69] yes=25,no=26,missing=25
+				25:[Age<60] yes=49,no=50,missing=49
+					49:[Neighbourhood<36] yes=87,no=88,missing=87
+						87:leaf=0.00506159244
+						88:leaf=0.252115011
+					50:[ScheduledDay<1] yes=89,no=90,missing=89
+						89:leaf=0.222158507
+						90:leaf=-0.164811
+				26:[Neighbourhood<77] yes=51,no=52,missing=51
+					51:[Age<43] yes=91,no=92,missing=91
+						91:leaf=-0.344613969
+						92:leaf=-0.0793060809
+					52:[Neighbourhood<78] yes=93,no=94,missing=93
+						93:leaf=0.181342691
+						94:leaf=-0.207609653
+		6:[TimeDifference<122729] yes=13,no=14,missing=13
+			13:leaf=0.250859559
+			14:[TimeDifference<140679] yes=27,no=28,missing=27
+				27:[Neighbourhood<56] yes=53,no=54,missing=53
+					53:[TimeDifference<131078] yes=95,no=96,missing=95
+						95:leaf=-0.0459629297
+						96:leaf=-0.355317056
+					54:leaf=0.0446649231
+				28:[TimeDifference<172434] yes=55,no=56,missing=55
+					55:leaf=0.281601489
+					56:[Age<47] yes=97,no=98,missing=97
+						97:leaf=0.0599920712
+						98:leaf=0.000475816953
+booster[8]:
+0:[TimeDifference<58986] yes=1,no=2,missing=1
+	1:[R1<1] yes=3,no=4,missing=3
+		3:[AppointmentDay<1] yes=7,no=8,missing=7
+			7:[Age<19] yes=15,no=16,missing=15
+				15:[Age<6] yes=29,no=30,missing=29
+					29:[Neighbourhood<29] yes=51,no=52,missing=51
+						51:leaf=-0.0303306449
+						52:leaf=-0.202798292
+					30:leaf=-0.304059148
+				16:[Age<20] yes=31,no=32,missing=31
+					31:leaf=0.181976646
+					32:[Age<81] yes=53,no=54,missing=53
+						53:leaf=-0.181762546
+						54:leaf=-0.0205564536
+			8:[ScheduledDay<1] yes=17,no=18,missing=17
+				17:[TimeDifference<35469] yes=33,no=34,missing=33
+					33:[TimeDifference<27815] yes=55,no=56,missing=55
+						55:leaf=0.0576149933
+						56:leaf=-0.215413898
+					34:[TimeDifference<36014] yes=57,no=58,missing=57
+						57:leaf=0.407013148
+						58:leaf=0.0209932402
+				18:[Age<5] yes=35,no=36,missing=35
+					35:[Neighbourhood<49] yes=59,no=60,missing=59
+						59:leaf=-0.156131744
+						60:leaf=-0.268457949
+					36:[Age<15] yes=61,no=62,missing=61
+						61:leaf=-0.0293070953
+						62:leaf=-0.135735124
+		4:[TimeDifference<26985] yes=9,no=10,missing=9
+			9:[TimeDifference<25264] yes=19,no=20,missing=19
+				19:leaf=0.106151074
+				20:[Age<36] yes=37,no=38,missing=37
+					37:leaf=-0.0514643677
+					38:leaf=-0.273603767
+			10:[Age<50] yes=21,no=22,missing=21
+				21:[Age<32] yes=39,no=40,missing=39
+					39:[AppointmentDay<2] yes=63,no=64,missing=63
+						63:leaf=-0.105578192
+						64:leaf=0.103249826
+					40:[Age<45] yes=65,no=66,missing=65
+						65:leaf=-0.226991624
+						66:leaf=-0.00394052686
+				22:[Neighbourhood<72] yes=41,no=42,missing=41
+					41:[Neighbourhood<52] yes=67,no=68,missing=67
+						67:leaf=0.0307240374
+						68:leaf=0.274879992
+					42:leaf=-0.13500239
+	2:[TimeDifference<59480] yes=5,no=6,missing=5
+		5:[Neighbourhood<35] yes=11,no=12,missing=11
+			11:leaf=0.0922523439
+			12:[AppointmentDay<4] yes=23,no=24,missing=23
+				23:leaf=0.20876503
+				24:leaf=0.677890062
+		6:[TimeDifference<293873] yes=13,no=14,missing=13
+			13:[Handcap<1] yes=25,no=26,missing=25
+				25:[TimeDifference<223235] yes=43,no=44,missing=43
+					43:[Age<25] yes=69,no=70,missing=69
+						69:leaf=0.0211362466
+						70:leaf=-0.0753081813
+					44:[Diabetes<1] yes=71,no=72,missing=71
+						71:leaf=-0.149060696
+						72:leaf=0.0982652381
+				26:[Diabetes<1] yes=45,no=46,missing=45
+					45:[TimeDifference<134999] yes=73,no=74,missing=73
+						73:leaf=-0.0433530472
+						74:leaf=0.354013443
+					46:[Age<66] yes=75,no=76,missing=75
+						75:leaf=0.00632722722
+						76:leaf=-0.190742746
+			14:[TimeDifference<315381] yes=27,no=28,missing=27
+				27:[AppointmentDay<1] yes=47,no=48,missing=47
+					47:[TimeDifference<303447] yes=77,no=78,missing=77
+						77:leaf=0.0535707474
+						78:leaf=0.278268874
+					48:[TimeDifference<301114] yes=79,no=80,missing=79
+						79:leaf=0.152371824
+						80:leaf=-0.0174448881
+				28:[TimeDifference<372686] yes=49,no=50,missing=49
+					49:[Neighbourhood<27] yes=81,no=82,missing=81
+						81:leaf=-0.216029644
+						82:leaf=-0.0365325697
+					50:[TimeDifference<375337] yes=83,no=84,missing=83
+						83:leaf=0.44697237
+						84:leaf=-0.0165094528
+booster[9]:
+0:[TimeDifference<117901] yes=1,no=2,missing=1
+	1:[AppointmentDay<1] yes=3,no=4,missing=3
+		3:[Diabetes<1] yes=7,no=8,missing=7
+			7:[TimeDifference<29841] yes=15,no=16,missing=15
+				15:[TimeDifference<29230] yes=31,no=32,missing=31
+					31:[Neighbourhood<70] yes=61,no=62,missing=61
+						61:leaf=-0.199616894
+						62:leaf=0.104756318
+					32:[Neighbourhood<45] yes=63,no=64,missing=63
+						63:leaf=0.222520679
+						64:leaf=-0.0721404478
+				16:[TimeDifference<47929] yes=33,no=34,missing=33
+					33:[TimeDifference<35089] yes=65,no=66,missing=65
+						65:leaf=-0.169430748
+						66:leaf=-0.258450925
+					34:[TimeDifference<50316] yes=67,no=68,missing=67
+						67:leaf=0.104753472
+						68:leaf=-0.198624715
+			8:[Neighbourhood<25] yes=17,no=18,missing=17
+				17:leaf=-0.215766966
+				18:[Age<51] yes=35,no=36,missing=35
+					35:leaf=-0.174828142
+					36:[Age<56] yes=69,no=70,missing=69
+						69:leaf=0.350503802
+						70:leaf=-0.0499257967
+		4:[Age<5] yes=9,no=10,missing=9
+			9:[Neighbourhood<77] yes=19,no=20,missing=19
+				19:[Neighbourhood<14] yes=37,no=38,missing=37
+					37:[TimeDifference<31117] yes=71,no=72,missing=71
+						71:leaf=0.0934441239
+						72:leaf=-0.168660313
+					38:[TimeDifference<34550] yes=73,no=74,missing=73
+						73:leaf=-0.262186348
+						74:leaf=-0.156894207
+				20:[Gender<1] yes=39,no=40,missing=39
+					39:leaf=0.260760814
+					40:leaf=-0.197466254
+			10:[Age<18] yes=21,no=22,missing=21
+				21:[Handcap<1] yes=41,no=42,missing=41
+					41:[TimeDifference<57021] yes=75,no=76,missing=75
+						75:leaf=-0.045565851
+						76:leaf=0.198363051
+					42:[Gender<1] yes=77,no=78,missing=77
+						77:leaf=-0.0058263028
+						78:leaf=0.805582821
+				22:[Neighbourhood<30] yes=43,no=44,missing=43
+					43:[TimeDifference<25494] yes=79,no=80,missing=79
+						79:leaf=0.241839513
+						80:leaf=-0.0542167574
+					44:[ScheduledDay<1] yes=81,no=82,missing=81
+						81:leaf=0.00140615925
+						82:leaf=-0.13113381
+	2:[R1<1] yes=5,no=6,missing=5
+		5:[SMS_received<1] yes=11,no=12,missing=11
+			11:[ScheduledDay<2] yes=23,no=24,missing=23
+				23:[Age<2] yes=45,no=46,missing=45
+					45:[AppointmentDay<3] yes=83,no=84,missing=83
+						83:leaf=0.20579569
+						84:leaf=-0.121340595
+					46:[TimeDifference<118217] yes=85,no=86,missing=85
+						85:leaf=0.265849859
+						86:leaf=-0.0338095427
+				24:[TimeDifference<5815121] yes=47,no=48,missing=47
+					47:[TimeDifference<4980057] yes=87,no=88,missing=87
+						87:leaf=0.0140878959
+						88:leaf=0.342244983
+					48:[Age<76] yes=89,no=90,missing=89
+						89:leaf=-0.229775935
+						90:leaf=0.231510773
+			12:[TimeDifference<291416] yes=25,no=26,missing=25
+				25:[TimeDifference<220252] yes=49,no=50,missing=49
+					49:[TimeDifference<216418] yes=91,no=92,missing=91
+						91:leaf=-0.122431941
+						92:leaf=0.276425451
+					50:[Neighbourhood<27] yes=93,no=94,missing=93
+						93:leaf=-0.301342726
+						94:leaf=-0.0883511454
+				26:[TimeDifference<318883] yes=51,no=52,missing=51
+					51:[Neighbourhood<26] yes=95,no=96,missing=95
+						95:leaf=-0.164019823
+						96:leaf=0.15773645
+					52:[Handcap<2] yes=97,no=98,missing=97
+						97:leaf=-0.0295068603
+						98:leaf=0.421264201
+		6:[Neighbourhood<7] yes=13,no=14,missing=13
+			13:[Age<34] yes=27,no=28,missing=27
+				27:[TimeDifference<1817341] yes=53,no=54,missing=53
+					53:leaf=0.279445678
+					54:leaf=0.0614718236
+				28:[Age<51] yes=55,no=56,missing=55
+					55:leaf=-0.136789367
+					56:leaf=0.180895209
+			14:[Neighbourhood<19] yes=29,no=30,missing=29
+				29:[Age<15] yes=57,no=58,missing=57
+					57:[TimeDifference<1776708] yes=99,no=100,missing=99
+						99:leaf=-0.321743011
+						100:leaf=0.0691744387
+					58:[Age<36] yes=101,no=102,missing=101
+						101:leaf=0.177779406
+						102:leaf=-0.0864223391
+				30:[ScheduledDay<2] yes=59,no=60,missing=59
+					59:[TimeDifference<863801] yes=103,no=104,missing=103
+						103:leaf=0.175103337
+						104:leaf=0.0286213867
+					60:[Age<65] yes=105,no=106,missing=105
+						105:leaf=-0.0117407013
+						106:leaf=0.187262446

@@ -65,12 +65,22 @@ def hist_get_cf(counts, bin_edges, sigmas):
 
     return (cf_lft, cf_rgt)
 
-def locllh(x,a,b):
-    return (np.sum(np.log(theoretical_pdf(x, a, b)),axis=0))
+def locllh(x,a,b, pdf):
+    return (np.sum(np.log(pdf(x, a, b)),axis=0))
 
 
-
-def raster_scan(data, range_a, range_b, pdf, axplot=False, dims = 50):
+def raster_scan(data, range_a, range_b, pdf=theoretical_pdf, ax, dims = 50, plot_llh_contours = False):
+    """
+    Makes 2d raster scan for pdf in the specified ranges
+    :param data:
+    :param range_a:
+    :param range_b:
+    :param pdf: callable, must be of the forma f(x,a,b) for llh estimation
+    :param ax:
+    :param dims:
+    :param plot_llh_contours:
+    :return:
+    """
     vals_a   = np.linspace(*range_a, num=dims)
     vals_b   = np.linspace(*range_b, num=dims)
 
@@ -80,7 +90,7 @@ def raster_scan(data, range_a, range_b, pdf, axplot=False, dims = 50):
     a_3d = a[np.newaxis, :, :]
     b_3d = b[np.newaxis, :, :]
 
-    rst_llh = locllh(x_3d, a_3d, b_3d)
+    rst_llh = locllh(x_3d, a_3d, b_3d, pdf=pdf)
 
     ax.pcolormesh(a, b, rst_llh)
 
@@ -90,41 +100,32 @@ def raster_scan(data, range_a, range_b, pdf, axplot=False, dims = 50):
     rst_max_a = vals_b[b_idx]
     rst_max_llh = rst_llh[a_idx, b_idx]
 
-    llh_1s = rst_max_llh - 0.5
-    llh_2s = rst_max_llh - 2.
-    llh_3s = rst_max_llh - 4.5
+    if plot_llh_contours == True:
+        llh_1s = rst_max_llh - 0.5
+        llh_2s = rst_max_llh - 2.
+        llh_3s = rst_max_llh - 4.5
 
-    llhs_s = [
-        llh_1s,
-        llh_2s,
-        llh_3s,
-    ]
+        llhs_s = [
+            llh_1s,
+            llh_2s,
+            llh_3s,
+        ]
 
-    cf_colors = [
-        'xkcd:dark purple',
-        'xkcd:purple',
-        'xkcd:light purple',
-    ]
-
-    print(llhs_s)
-
-    ax.contour(a, b, rst_llh, levels=sorted(llhs_s),colors = cf_colors, label='CF')
-
-    legend_elements = [Line2D([0], [0], color=cf_colors[0], label='LLH 3s'),
-                       Line2D([0], [0], color=cf_colors[1], label='LLH 2s'),
-                       Line2D([0], [0], color=cf_colors[2], label='LLH 1s'),]
+        cf_colors = [
+            'xkcd:dark purple',
+            'xkcd:purple',
+            'xkcd:light purple',
+        ]
 
 
-    #
-    # for s, llh_s in enumerate(llhs_s):
-    #     s = s+1
-    #     a_bounds = a[np.nonzero(np.diff(rst_llh > llh_s))]
-    #     b_bounds = b[np.nonzero(np.diff(rst_llh > llh_s))]
-    #
-    #     ax.plot(a_bounds, b_bounds)#, c ='r')#, marker = '.')
-    #     # ax.scatter(a_bounds, b_bounds, c ='r', marker = '.')
-    #
-    ax.legend(handles=legend_elements)
+        ax.contour(a, b, rst_llh, levels=sorted(llhs_s),colors = cf_colors, label='CF')
+
+        legend_elements = [Line2D([0], [0], color=cf_colors[0], label='LLH 3s'),
+                           Line2D([0], [0], color=cf_colors[1], label='LLH 2s'),
+                           Line2D([0], [0], color=cf_colors[2], label='LLH 1s'),]
+
+
+        ax.legend(handles=legend_elements)
 
 
     return ax

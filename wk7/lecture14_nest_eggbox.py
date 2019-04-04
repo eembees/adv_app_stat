@@ -59,4 +59,4 @@ plt.show()
 # g = sns.jointplot(x = res.samples[:,0], y = res.samples[:,1], kind="hex",
 #         marginal_kws = dict(bins=50, rug=True),
 #         )
-plt.show()
+# plt.show()

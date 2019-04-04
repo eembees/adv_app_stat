@@ -1,5 +1,6 @@
 import scipy.stats
 import numpy as np
+from scipy.interpolate import interp1d, PchipInterpolator
 
 def critical_chi_sq(sigma, ndof):
     return scipy.stats.chi2.isf(1 - (0.5 - scipy.stats.norm.sf(sigma)) * 2, ndof)
@@ -75,3 +76,85 @@ def make_KDE(x:np.ndarray, h: float = 1.5, type: str = 'gauss'):
         )
 
     return pdf_KDE
+
+
+
+
+def locllh(x,a,b, pdf):
+    return (np.sum(np.log(pdf(x, a, b)),axis=0))
+
+
+def raster_scan(data, range_a, range_b,  pdf, ax, dims = 50, plot_llh_contours = False):
+    """
+    Makes 2d raster scan for pdf in the specified ranges
+    :param data:
+    :param range_a:
+    :param range_b:
+    :param pdf: callable, must be of the forma f(x,a,b) for llh estimation
+    :param ax:
+    :param dims:
+    :param plot_llh_contours:
+    :return:
+    """
+    vals_a   = np.linspace(*range_a, num=dims)
+    vals_b   = np.linspace(*range_b, num=dims)
+
+    a, b = np.meshgrid(vals_a, vals_b, indexing='ij')
+
+    x_3d = data[:, np.newaxis, np.newaxis]
+    a_3d = a[np.newaxis, :, :]
+    b_3d = b[np.newaxis, :, :]
+
+    rst_llh = locllh(x_3d, a_3d, b_3d, pdf=pdf)
+
+    ax.pcolormesh(a, b, rst_llh)
+
+    rst_max_idx = np.nanargmax(rst_llh)
+    a_idx, b_idx = np.unravel_index(rst_max_idx, rst_llh.shape)
+    rst_max_b = vals_a[a_idx]
+    rst_max_a = vals_b[b_idx]
+    rst_max_llh = rst_llh[a_idx, b_idx]
+
+    if plot_llh_contours == True:
+        llh_1s = rst_max_llh - 0.5
+        llh_2s = rst_max_llh - 2.
+        llh_3s = rst_max_llh - 4.5
+
+        llhs_s = [
+            llh_1s,
+            llh_2s,
+            llh_3s,
+        ]
+
+        cf_colors = [
+            'xkcd:dark purple',
+            'xkcd:purple',
+            'xkcd:light purple',
+        ]
+
+
+        ax.contour(a, b, rst_llh, levels=sorted(llhs_s),colors = cf_colors, label='CF')
+
+        legend_elements = [Line2D([0], [0], color=cf_colors[0], label='LLH 3s'),
+                           Line2D([0], [0], color=cf_colors[1], label='LLH 2s'),
+                           Line2D([0], [0], color=cf_colors[2], label='LLH 1s'),]
+
+
+        ax.legend(handles=legend_elements)
+
+
+    return ax
+
+def spline(xdata, ydata, kind='linear', num=10000, int_range=None):
+    range_x = (xdata.min(),xdata.max())
+    xnew = np.linspace(*range_x, num=num)
+    if kind == 'pchip':
+        f = PchipInterpolator(xdata,ydata)
+    else:
+        f = interp1d(xdata, ydata, kind=kind)
+    if int_range is None:
+        int = quad(f, *range_x)[0]
+    else:
+        int = quad(f, *int_range)[0]
+    y = f(xnew)
+    return(f,y,int)
