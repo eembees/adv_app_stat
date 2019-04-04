@@ -9,7 +9,7 @@ def chisq(exp, data, unc):
     return ( np.power(exp - data,2) / np.power(unc,2) )
 
 def llh(data, pdf):
-    return (np.sum(np.log(pdf(data)), axis=0))
+    return (np.nansum(np.log(pdf(data)), axis=0))
 
 
 def bin_data(x, N_bins=100, range_x = None):

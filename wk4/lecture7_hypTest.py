@@ -18,14 +18,14 @@ def theoretical_pdf(x, alfa, beta):
     C = 1 / (2/3 * (beta +3))  # Normalization constant from wolfram range +- 0.95
     return np.where(range_mask, C * theoretical_function(x, alfa, beta), 0)
 
+def llh(data, pdf):
+    return (np.sum(np.log(pdf(data)), axis=0))
 
 def make_pdf(alfa, beta):
     # Return a function depending only on x.
     return lambda x: theoretical_pdf(x, alfa, beta)
 
 
-def llh(data, pdf):
-    return (np.sum(np.log(pdf(data)), axis=0))
 
 
 def make_target(data):

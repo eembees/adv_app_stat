@@ -4,22 +4,12 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18ad99b4-3eb3-4f27-aaea-46ddebad8e80" name="Default Changelist" comment="added exam">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/p4_patients.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/p5_minuit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/p5_nest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/p5_nest_llh_mapping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/p5_nest_read.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/report/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/exam/report/main.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/report/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/exam/report/main.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/report/main_cs.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/exam/report/main_cs.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/report/main_cs.tex" beforeDir="false" afterPath="$PROJECT_DIR$/exam/report/main_cs.tex" afterDir="false" />
+    <list default="true" id="18ad99b4-3eb3-4f27-aaea-46ddebad8e80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/exam/p1_col1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/p1_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/p1_numbers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/lib_math.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lib_math.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wk3/lecture5_2dconfregions.py" beforeDir="false" afterPath="$PROJECT_DIR$/wk3/lecture5_2dconfregions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wk7/lecture14_nest_eggbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/wk7/lecture14_nest_eggbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wk4/lecture7_hypTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/wk4/lecture7_hypTest.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +18,98 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <splitter split-orientation="vertical" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/exam/p1_numbers.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="533">
+                  <caret line="108" selection-start-line="94" selection-end-line="108" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/exam/p1_col1.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="463">
+                  <caret line="167" column="25" selection-start-line="167" selection-start-column="25" selection-end-line="167" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wk4/lecture7_hypTest.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="223">
+                  <caret line="88" column="35" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/problemset2/p5_particles_random.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="223">
+                  <caret line="97" column="32" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/problemset2/p5_plottingllhratios.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="259">
+                  <caret line="41" column="20" selection-start-line="41" selection-end-line="42" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/monte_carlo.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lib/lib_math.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                    <element signature="e#2352#3920#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,12 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cusum</find>
-      <find>print</find>
-      <find>chi2</find>
-      <find>rel_defective</find>
-      <find>ratio</find>
-      <find>inset</find>
       <find>sfs</find>
       <find>sfst</find>
       <find>ks</find>
@@ -69,6 +144,12 @@
       <find>marker</find>
       <find>coef</find>
       <find>line2d</find>
+      <find>bar</find>
+      <find>fval</find>
+      <find>return(llh</find>
+      <find>make_targe</find>
+      <find>make_target</find>
+      <find>make_ta</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -83,8 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/lecture4_plot_population_bayes.py" />
         <option value="$PROJECT_DIR$/wk2/lecture4_spline.py" />
         <option value="$PROJECT_DIR$/wk3/lecture6_bootstrap.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.py" />
@@ -94,7 +173,6 @@
         <option value="$PROJECT_DIR$/wk1/leastsq/ex.py" />
         <option value="$PROJECT_DIR$/lib/nice_string_output.py" />
         <option value="$PROJECT_DIR$/wk3/lecture5_bootstrap.py" />
-        <option value="$PROJECT_DIR$/wk4/lecture7_hypTest.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/lib_math.py" />
         <option value="$PROJECT_DIR$/wk5/BDT_preprocess.py" />
@@ -126,7 +204,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/wk3/lecture5_2dconfregions.py" />
         <option value="$PROJECT_DIR$/exam/test.py" />
-        <option value="$PROJECT_DIR$/lib/lib_math.py" />
         <option value="$PROJECT_DIR$/exam/p4_patients.py" />
         <option value="$PROJECT_DIR$/wk7/lecture14_nest_eggbox.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
@@ -134,6 +211,10 @@
         <option value="$PROJECT_DIR$/exam/p5_nest.py" />
         <option value="$PROJECT_DIR$/exam/p5_nest_read.py" />
         <option value="$PROJECT_DIR$/exam/p5_nest_llh_mapping.py" />
+        <option value="$PROJECT_DIR$/exam/p1_numbers.py" />
+        <option value="$PROJECT_DIR$/lib/lib_math.py" />
+        <option value="$PROJECT_DIR$/wk4/lecture7_hypTest.py" />
+        <option value="$PROJECT_DIR$/exam/p1_col1.py" />
       </list>
     </option>
   </component>
@@ -208,8 +289,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.p5_nest_llh_mapping">
-    <configuration name="p5_minuit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.p1_col1">
+    <configuration name="p1_col1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="advanced_applied_stat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -221,7 +302,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exam/p5_minuit.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exam/p1_col1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="p1_numbers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="advanced_applied_stat" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exam" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exam/p1_numbers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -293,34 +395,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="advanced_applied_stat" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.p1_col1" />
+        <item itemvalue="Python.p1_numbers" />
         <item itemvalue="Python.p5_nest_llh_mapping" />
         <item itemvalue="Python.p5_nest_read" />
         <item itemvalue="Python.p5_nest" />
-        <item itemvalue="Python.p5_minuit" />
-        <item itemvalue="Python.scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -447,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554283038088</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added exam problem 5. did some work on 4">
+      <created>1554385831847</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1554385831847</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -461,13 +549,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="173" y="-1920" width="1200" height="1920" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4922426" visible="true" weight="0.23833758" />
       <window_info id="Structure" order="1" sideWeight="0.5077574" side_tool="true" weight="0.17399268" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32918918" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3508108" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19405405" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -519,7 +608,8 @@
     <MESSAGE value="added gitignore" />
     <MESSAGE value="updated gitignore" />
     <MESSAGE value="added exam" />
-    <option name="LAST_COMMIT_MESSAGE" value="added exam" />
+    <MESSAGE value="added exam problem 5. did some work on 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="added exam problem 5. did some work on 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -533,14 +623,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wk5/dump.raw.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wk6/maxLH_show.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wk6/maxLH_produce.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -638,24 +720,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/monte_carlo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/seaborn/axisgrid.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="2283" selection-start-line="2283" selection-end-line="2283" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/plot_gaussian.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
@@ -692,16 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problemset2/p5_particles_random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problemset2/p5_particles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -726,16 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problemset2/p5_plottingllhratios.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -859,17 +907,6 @@
     <entry file="file://$PROJECT_DIR$/exam/figs/p5_nest_3d_corner.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lib_math.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="86" selection-start-line="86" selection-end-line="146" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#2352#3920#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exam/p5_nest_read.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -897,10 +934,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/exam/p4_patients.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="130" column="88" lean-forward="true" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="88" />
+        <state>
+          <caret selection-end-line="6" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/plot_gaussian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/monte_carlo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lib_math.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#2352#3920#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/p1_numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="108" selection-start-line="94" selection-end-line="108" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problemset2/p5_particles_random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="97" column="32" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problemset2/p5_plottingllhratios.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="41" column="20" selection-start-line="41" selection-end-line="42" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -909,18 +1008,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wk4/lecture7_hypTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="88" column="59" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="59" />
+        <state relative-caret-position="223">
+          <caret line="88" column="35" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="35" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+    <entry file="file://$PROJECT_DIR$/exam/p1_col1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="463">
+          <caret line="167" column="25" selection-start-line="167" selection-start-column="25" selection-end-line="167" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
